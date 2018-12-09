@@ -16,3 +16,22 @@ The UI - Java Swing GUI - based on Netbean
 5. TextArea to show Path.
 
 
+6 To Do List
+
+6.1 UI : Done
+
+6.2 Get alive Map (GeoData) request : done
+
+6.3 The Path algorithm (0/3) : not finish yet
+
+6.4 Transfer MapData into SQL model : not finish yet
+
+6.5 Print out Path Message : not finish yet.
+
+6.6 Pass data from backend to frontend : not finish yet
+
+6.6.1 The building names for both location dropdown
+
+6.6.2 The method name dropDown
+
+6.7 Start button choose which algorithm to run this the user's data : not finish yet.
