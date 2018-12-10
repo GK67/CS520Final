@@ -168,9 +168,9 @@ public class Path{
     public ArrayList getPath(double lat0, double lon0, double lat1, double lon1){
 	try{
 	    String startingNode = getClosestPathNode(lat0, lon0);
-	    startingNode.replaceAll("\\s+","");
+	    startingNode = startingNode.replaceAll("\\s+","");
 	    String endNode = getClosestPathNode(lat1,lon1);
-	    endNode.replaceAll("\\s+","");
+	    endNode = endNode.replaceAll("\\s+","");
 	    NodeComparable nc = new NodeComparable();
 	    nc.setTarget(endNode);
 	    PriorityQueue<ArrayList> pq = new PriorityQueue<ArrayList>(10, nc);
@@ -216,8 +216,8 @@ public class Path{
 		    String neighbor = (String) (neighbors.get(i));
 		    neighbor = neighbor.replaceAll("\\s+","");
 		    System.out.print("Path: ");
-		    for (int i = 0; i < path.size(); i++){
-			System.out.print(path.get(i) + " ");
+		    for (int z = 0; z < path.size(); z++){
+			System.out.print(path.get(z) + " ");
 		    }
 		    if (! path.contains(neighbor)){
 			System.out.println("test");
