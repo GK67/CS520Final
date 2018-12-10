@@ -28,7 +28,7 @@ public class Query {
     // Canned queries
 
     private String _create_node_table_sql = "CREATE TABLE node ("
-  						+"id CHAR(30) NOT NULL,"
+  						+"id CHAR(70) NOT NULL,"
   						+"latitude FLOAT NOT NULL,"
   						+"longitude FLOAT NOT NULL,"
   						+"elevation FLOAT NOT NULL,"
@@ -36,10 +36,10 @@ public class Query {
     private PreparedStatement _create_node_table_statement;
 
     private String _create_way_table_sql = "CREATE TABLE way ("
-  						+"id CHAR(30) NOT NULL,"
-  						+"streetName CHAR(30),"
-  						+"nid CHAR(30) NOT NULL,"
-  						+"buildingName CHAR(30),"
+  						+"id CHAR(70) NOT NULL,"
+  						+"streetName CHAR(300),"
+  						+"nid CHAR(70) NOT NULL,"
+  						+"buildingName CHAR(100),"
   						+"FOREIGN KEY(nid) REFERENCES node)";
     private PreparedStatement _create_way_table_statement;
 
@@ -60,7 +60,7 @@ public class Query {
     private String _search_node_by_nid_sql = "SELECT * FROM node WHERE id = ?";
     private PreparedStatement _search_node_by_nid_statement;
 
-    private String _search_way_by_nid_sql = "SELECT id FROM way WHERE nid = ?";
+    private String _search_way_by_nid_sql = "SELECT distinct id FROM way WHERE nid = ?";
     private PreparedStatement _search_way_by_nid_statement;
 
     private String _search_all_nodeId_sql = "SELECT distinct nid FROM way";
