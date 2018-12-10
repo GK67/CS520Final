@@ -80,7 +80,7 @@ public class Path{
 	try{
 	    ArrayList output = new ArrayList();
 	    ArrayList ways = q.transaction_search_way(curr);
-	    System.out.print(curr + " :");
+	    System.out.print(curr + "node :");
 	    System.out.println(ways);
 	    for (int i = 0; i < ways.size(); i ++){
 		String way = (String)(ways.get(i));
@@ -209,7 +209,7 @@ public class Path{
 	    while (pq.size() > 0 && !(((String) (path.get(path.size()-1))) .equals(endNode))   ){
 
 		path = (ArrayList)(pq.peek());
-		pq.remove(path);
+		System.out.println(pq.remove(path));
 		String node = (String)(path.get(path.size() - 1));
 		q.transaction_search_node(node);
 		Double nEle = q.getElevation();
