@@ -22,12 +22,14 @@ import java.io.*;
 
 public class Path{
     Query q;
+    ArrayList hasWalked;
 
     public Path(){
 	try{
 	    q = new Query();
 	    q.openConnection();
 	    q.prepareStatements();
+	    hasWalked = new ArrayList();
 	}
 	catch(Exception ex){
 	    System.out.println("error");
@@ -86,11 +88,17 @@ public class Path{
 		String way = (String)(ways.get(i));
 		System.out.println("Curr way: " +way);
 		way = way.replaceAll("\\s+","");
-		ArrayList nodes = q.transaction_search_nodes_of_way(way);
-		for (int j = 0; j < nodes.size(); j++){
-		    String node = (String) (nodes.get(j));
-		    node = node.replaceAll("\\s+","");
-		    output.add(node);
+		if (!hasWalked.contains(way)){
+		    ArrayList nodes = q.transaction_search_nodes_of_way(way);
+		    for (int j = 0; j < nodes.size(); j++){
+			String node = (String) (nodes.get(j));
+			node = node.replaceAll("\\s+","");
+			ArrayList tuple = new ArrayList();
+			tuple.add(node);
+			tuple.add(way);
+			output.add(tuple);
+		    }
+		    hasWalked(way);
 		}
 	    }
 	    return output;
@@ -173,6 +181,7 @@ public class Path{
     
     public ArrayList getPath(double lat0, double lon0, double lat1, double lon1){
 	try{
+	    hasWalked = new ArrayList();
 	    String startingNode = getClosestPathNode(lat0, lon0);
 	    startingNode = startingNode.replaceAll("\\s+","");
 	    String endNode = getClosestPathNode(lat1,lon1);
@@ -206,11 +215,11 @@ public class Path{
 	    pq.add(temp);
 	    System.out.println("Priority Queue initialized");
 	    ArrayList path = (ArrayList)(pq.peek());
-	    while (pq.size() > 0 && !(((String) (path.get(path.size()-1))) .equals(endNode))   ){
-
+	    String node = (String) (path.get(path.size()-1));
+	    while (pq.size() > 0 && !(node.equals(endNode))   ){
 		path = (ArrayList)(pq.peek());
 		System.out.println(pq.remove(path));
-		String node = (String)(path.get(path.size() - 1));
+		node = (String)(path.get(path.size() - 1));
 		q.transaction_search_node(node);
 		Double nEle = q.getElevation();
 		Double nLat = q.getLatitude();
@@ -218,9 +227,12 @@ public class Path{
 		System.out.println("Attempt to start neighbor search");
 		ArrayList neighbors = nearestNeighbors(node);
 		System.out.println(neighbors);
+		boolean walkedPath = false;
 		for (int i = 0; i < neighbors.size(); i++){
+		    ArrayList tuple = (ArrayList)(neighbors.get(i));
+		    String way = (String)(tuple.get(1));
 		    ArrayList newPath = new ArrayList(path);
-		    String neighbor = (String) (neighbors.get(i));
+		    String neighbor = (String) (tuple.get(0));
 		    neighbor = neighbor.replaceAll("\\s+","");
 		    if (! newPath.contains(neighbor)){
 			System.out.println("test");
@@ -247,7 +259,7 @@ public class Path{
 			    dist += distance( neighborLat,neighborLon,nLat, nLon);
 			    newPath.set(0, dist*ele);
 			    newPath.set(1, dist);
-			    newPath.add(neighbor);
+			    newPath.add(tuple);
 			    System.out.println(neighbor + " added to path");
 			    pq.add(newPath);
 			    if (neighbor.equals(endNode)){
