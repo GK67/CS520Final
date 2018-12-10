@@ -172,6 +172,7 @@ public class Path{
 		Double nEle = q.getElevation();
 		Double nLat = q.getLatitude();
 		Double nLon = q.getLongitude();
+		System.out.println("Attempt to start neighbor search");
 		neighbors = nearestNeighbors(node);
 		for (int i = 0; i < neighbors.size(); i++){
 		    System.out.println("Finding Neighbors");
