@@ -119,6 +119,7 @@ public class ConvertData{
 	    NodeList nodes = doc.getElementsByTagName("node");
 	    System.out.println(nodes.getLength());
 	    JSONObject elevation = getElevation(nodes);
+	    System.out.println("test");
 	    ArrayList output = new ArrayList();
 	    for (int i = 0; i < nodes.getLength(); i++){
 		Element element = (Element) nodes.item(i);
