@@ -110,7 +110,7 @@ public class Path{
     }    
     
     
-    public ArrayList getPath(double lat0, double lon0, double lat1, double lon1,){
+    public ArrayList getPath(double lat0, double lon0, double lat1, double lon1){
 	String startingNode = getClosestPathNode(lat0, lon0);
 	String endNode = getClosestPathNode(lat1,lon1);
 	NodeComparable nc = new NodeComparable();
