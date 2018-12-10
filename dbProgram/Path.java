@@ -57,6 +57,7 @@ public class Path{
 	    Double newLat = q.getLatitude();
 	    Double newLon = q.getLongitude();
 	    Double least = distance(lat, lon, newLat, newLon);
+	    System.out.println(nodewsInWays.size());
 	    for (int i = 1; i < nodesInWays.size(); i++){
 		q.transaction_search_node((String)(nodesInWays.get(i)));
 		newLat = q.getLatitude();
