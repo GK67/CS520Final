@@ -63,11 +63,14 @@ public class Query {
     private String _search_way_by_nid_sql = "SELECT id FROM way WHERE nid = ?";
     private PreparedStatement _search_way_by_nid_statement;
 
-    private String _search_all_nodeId_sql = "SELECT id FROM node";
+    private String _search_all_nodeId_sql = "SELECT distinct nid FROM way";
     private PreparedStatement _search_all_nodeId_statement;
 
     private String _search_node_by_wid_sql = "SELECT nid FROM way WHERE id = ?";
     private PreparedStatement _search_node_by_wid_statement;
+
+    private String _search_building_sql = "SELECT distinct buildingName FROM way WHERE buildingName <>''";
+    private PreparedStatement _search_building_statement;
 
 
 
@@ -140,6 +143,8 @@ public class Query {
 		_search_all_nodeId_statement = _osmdb.prepareStatement(_search_all_nodeId_sql);
 
 		_search_node_by_wid_statement= _osmdb.prepareStatement(_search_node_by_wid_sql);
+
+		_search_building_statement= _osmdb.prepareStatement(_search_building_sql);
     }
 
 
@@ -269,14 +274,12 @@ public class Query {
     public ArrayList transaction_search_all_node() throws Exception {
         
         _begin_transaction_read_only_statement.executeUpdate();
-        
-        _search_all_nodeId_statement.clearParameters();
 
         ResultSet nodeSet = _search_all_nodeId_statement.executeQuery();
         ArrayList nodeList = new ArrayList();
         
         while(nodeSet.next()){
-        	nodeList.add(nodeSet.getString("id"));
+        	nodeList.add(nodeSet.getString("nid"));
         }
 
         _commit_transaction_statement.executeUpdate();
@@ -302,6 +305,23 @@ public class Query {
         _commit_transaction_statement.executeUpdate();
 
         return nodeList;
+    }
+
+    public ArrayList transaction_search_all_building() throws Exception {
+        
+        _begin_transaction_read_only_statement.executeUpdate();
+        
+
+        ResultSet buildingSet = _search_building_statement.executeQuery();
+        ArrayList buildingList = new ArrayList();
+        
+        while(buildingSet.next()){
+        	buildingList.add(buildingSet.getString("buildingName"));
+        }
+
+        _commit_transaction_statement.executeUpdate();
+
+        return buildingList;
     }
   
 }

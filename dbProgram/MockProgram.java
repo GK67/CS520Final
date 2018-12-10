@@ -111,6 +111,12 @@ public class MockProgram {
             System.out.println("all nodes list of a way:\t"+nodeListOfAWay.get(l));
         }
 
+        ArrayList buildingList = q.transaction_search_all_building();
+        //get all the nodes of a way
+        for(int l=0;l<buildingList.size();l++){
+            System.out.println("all building name list:\t"+buildingList.get(l));
+        }
+
 
         q.closeConnection();
 
