@@ -12,7 +12,7 @@ public class MockProgram {
         }
 
         //create mock data
-        ArrayList output=ConvertData.nodesToArray("./testdata");/*
+        /*ArrayList output=ConvertData.nodesToArray("./testdata");/*
         int i=10;
         String id="42949710";
         Double la=42.3787077;
@@ -31,7 +31,7 @@ public class MockProgram {
             output.add(node);
 	    }*/
         
-        ArrayList outputWayList= ConvertData.waysToArray("./testdata");
+        //ArrayList outputWayList= ConvertData.waysToArray("./testdata");
         /*
         int j=0;
         String idW="429497109";
@@ -69,11 +69,11 @@ public class MockProgram {
 
         //only insert the data in the begining, each time running, it will delete the original tables
         //and create new one
-        q.transaction_insert_data(output, outputWayList);  
+       // q.transaction_insert_data(output, outputWayList);  
         System.out.println("Finish insert data");
 
         //search a node, before get value need do this search first
-        q.transaction_search_node("4294971015");
+        q.transaction_search_node("66591571");
 
         //get the element of the node
         System.out.println("latitude\t"+q.getLatitude());
@@ -81,7 +81,7 @@ public class MockProgram {
         System.out.println("latitude\t"+q.getElevation());
 
         //search a node, before get value need do this search first
-        q.transaction_search_node("4294971017");
+        q.transaction_search_node("66645458");
 
         //get the element of the node
         System.out.println("latitude\t"+q.getLatitude());
@@ -91,7 +91,7 @@ public class MockProgram {
 
 
         //search ways by a node id
-        ArrayList wayList = q.transaction_search_way("4294971015");
+        ArrayList wayList = q.transaction_search_way("1603680132");
 
         for(int l=0;l<wayList.size();l++){
             System.out.println("waylist:\t"+wayList.get(l));
@@ -117,7 +117,21 @@ public class MockProgram {
             System.out.println("all building name list:\t"+buildingList.get(l));
         }
 
-
+        System.out.println("Start here......................................................");
+        Path p = new Path();/*
+        ArrayList neighbors = p.nearestNeighbors("66591571");
+        for (int i = 0; i < neighbors.size(); i++){
+            System.out.println(neighbors.get(i));
+        }*/
+        //String closestNode = p.getClosestPathNode();
+        System.out.println("finish creating a path Object......................");
+        ArrayList path = p.getPath(42.3903424,-72.5300928,  42.3903730, -72.5302840);
+        //ArrayList path = p.getPath(42.3905743,-72.5303372);
+        System.out.println(path);
+        /*for (int i = 0; i < path.size(); i ++){
+            System.out.println(path.get(i));
+        }*/
+        //System.out.println(closestNode);
         q.closeConnection();
 
     }
