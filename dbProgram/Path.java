@@ -191,8 +191,9 @@ public class Path{
 	    pq.add(temp);
 	    System.out.println("Priority Queue initialized");
 	    ArrayList path = (ArrayList)(pq.peek());
+	    System.o
 	    for (int i = 0; i < path.size(); i++){
-		System.out.println(path.get(i));
+		System.out.print(path.get(i) + " ");
 	    }
 	    System.out.println(endNode);
 	    while (pq.size() > 0 && !(((String) (path.get(path.size()-1))) .equals(endNode))   ){
