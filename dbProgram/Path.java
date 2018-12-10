@@ -165,6 +165,10 @@ public class Path{
 	    }
 	    System.out.println("Priority Queue initialized");
 	    ArrayList path = (ArrayList)(pq.peek());
+	    for (int i = 0; i < path.size(); i++){
+		System.out.println(path.get(i));
+	    }
+	    System.out.println(endNode);
 	    while (pq.size() > 0 && !(((String) (path.get(path.size()-1))) .equals(endNode))   ){
 		path = (ArrayList)(pq.peek());
 		pq.remove(path);
