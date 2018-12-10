@@ -100,7 +100,7 @@ public class Path{
 			tuple.add(way);
 			output.add(tuple);
 		    }
-		    if (walkedWay.equal(way)){
+		    if (walkedWay.equals(way)){
 			hasWalked.add(way);
 		    }
 		}
@@ -231,7 +231,7 @@ public class Path{
 		Double nLat = q.getLatitude();
 		Double nLon = q.getLongitude();
 		System.out.println("Attempt to start neighbor search");
-		ArrayList neighbors = nearestNeighbors(nodeT);
+		ArrayList neighbors = allNeighbors(nodeT);
 		System.out.println(neighbors);
 		boolean walkedPath = false;
 		for (int i = 0; i < neighbors.size(); i++){
