@@ -82,9 +82,6 @@ public class Path{
 	    ArrayList ways = q.transaction_search_way(curr);
 	    System.out.println(ways.size());
 	    for (int i = 0; i < ways.size(); i++){
-		System.out.println(ways.get(i));
-	    }
-	    for (int i = 0; i < ways.size(); i++){
 		ArrayList nodes = q.transaction_search_nodes_of_way((String)(ways.get(i)));
 		String first = null;
 		String second = null;
@@ -148,20 +145,24 @@ public class Path{
 	    nc.setTarget(endNode);
 	    PriorityQueue<ArrayList> pq = new PriorityQueue<ArrayList>(10, nc);
 	    ArrayList neighbors = nearestNeighbors(startingNode);
+	    System.out.println("Found Neighbors");
 	    q.transaction_search_node(startingNode);
-	    double sLat = q.getLatitude();
-	    double sLon = q.getLongitude();
+	    Double sLat = q.getLatitude();
+	    Double sLon = q.getLongitude();
 	    for(int i = 0; i < neighbors.size(); i ++){
 		ArrayList temp = new ArrayList();
 		String node = (String)(neighbors.get(i));
 		q.transaction_search_node(node);
-		double nLat = q.getLatitude();
-		double nLon = q.getLongitude();
-		temp.add(distance(sLat,sLon, nLat,nLon));
-		temp.add(distance(sLat,sLon, nLat,nLon));
-		temp.add(startingNode);
-		temp.add(node);
+		Double nLat = q.getLatitude();
+		Double nLon = q.getLongitude();
+		if (nLat != null && nLon != null && sLat != null && sLon != null){
+		    temp.add(distance(sLat,sLon, nLat,nLon));
+		    temp.add(distance(sLat,sLon, nLat,nLon));
+		    temp.add(startingNode);
+		    temp.add(node);
+		}
 	    }
+	    System.out.println("Priority Queue initialized");
 	    ArrayList path = (ArrayList)(pq.peek());
 	    while ( (!((String)(path.get(path.size()-1))) .equals(endNode)) && pq.size() > 0){
 		path = (ArrayList)(pq.peek());
