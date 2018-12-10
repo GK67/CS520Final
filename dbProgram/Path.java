@@ -110,6 +110,7 @@ public class Path{
 		while( (first == null || second == null) && n < nodes.size()){
 		    String node = (String)(nodes.get(n));
 		    node = node.replaceAll("\\s+","");
+		    System.out.println(first + " " + second + " " + curr);
 		    if (first == null){
 			if (! (node.equals(curr))){
 			    first = node;
