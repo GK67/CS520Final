@@ -80,6 +80,7 @@ public class Path{
 	try{
 	    ArrayList output = new ArrayList();
 	    ArrayList ways = q.transaction_search_way(curr);
+	    System.out.println(ways.size());
 	    for (int i = 0; i < ways.size(); i++){
 		System.out.println(ways.get(i));
 	    }
