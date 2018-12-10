@@ -97,6 +97,7 @@ public class Path{
 	
     public ArrayList nearestNeighbors(String curr){
 	try{
+	    curr = curr.replaceAll("\\s+","");
 	    ArrayList output = new ArrayList();
 	    ArrayList ways = q.transaction_search_way(curr);
 	    System.out.println(ways.size());
