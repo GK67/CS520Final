@@ -160,6 +160,7 @@ public class Path{
 		    temp.add(distance(sLat,sLon, nLat,nLon));
 		    temp.add(startingNode);
 		    temp.add(node);
+		    pq.add(temp);
 		}
 	    }
 	    System.out.println("Priority Queue initialized");
