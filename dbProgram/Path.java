@@ -219,13 +219,9 @@ public class Path{
 		ArrayList neighbors = allNeighbors(node);
 		System.out.println(neighbors);
 		for (int i = 0; i < neighbors.size(); i++){
+		    PriorityQueue newPath = new PriorityQueue(path);
 		    String neighbor = (String) (neighbors.get(i));
 		    neighbor = neighbor.replaceAll("\\s+","");
-		    System.out.print("Path: ");
-		    for (int z = 0; z < path.size(); z++){
-			System.out.print(path.get(z) + " ");
-		    }
-		    System.out.println();
 		    if (! path.contains(neighbor)){
 			System.out.println("test");
 			Double dist = (Double)(path.get(0));
@@ -249,11 +245,11 @@ public class Path{
 			    }
 			    ele = Math.pow(ele, Math.abs(neighborEle - nEle));
 			    dist += distance( neighborLat,neighborLon,nLat, nLon);
-			    path.set(0, dist*ele);
-			    path.set(1, dist);
-			    path.add(neighbor);
+			    newPath.set(0, dist*ele);
+			    newPath.set(1, dist);
+			    newPath.add(neighbor);
 			    System.out.println(neighbor + " added to path");
-			    pq.add(path);
+			    pq.add(newPath);
 			}
 		    }
 		}
