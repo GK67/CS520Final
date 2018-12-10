@@ -252,6 +252,7 @@ public class Path{
 			    path.set(0, dist*ele);
 			    path.set(1, dist);
 			    path.add(neighbor);
+			    System.out.println(neighbor + " added to path");
 			    pq.add(path);
 			}
 		    }
