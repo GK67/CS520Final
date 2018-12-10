@@ -130,6 +130,7 @@ public class Path{
 		for (int j = 0; j < nodes.size(); j++){
 		    String node = ((String)nodes.get(j));
 		    if (!(node.equals(curr))){
+			System.out.println("Current neighbor " +node);
 			q.transaction_search_node(node);
 			double nLat = q.getLatitude();
 			double nLon = q.getLongitude();
