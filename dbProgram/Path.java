@@ -101,19 +101,23 @@ public class Path{
 	    ArrayList ways = q.transaction_search_way(curr);
 	    System.out.println(ways.size());
 	    for (int i = 0; i < ways.size(); i++){
+		String way = (String)(ways.get(i));
+		way.replaceAll("\\s+","");
 		ArrayList nodes = q.transaction_search_nodes_of_way((String)(ways.get(i)));
 		String first = null;
 		String second = null;
 		int n = 0;
 		while( (first == null || second == null) && n < nodes.size()){
+		    String node = (String)(nodes.get(n));
+		    node.replaceAll("\\s+","");
 		    if (first == null){
-			if (! (((String)nodes.get(n)).equals(curr))){
-			    first = ((String)nodes.get(n));
+			if (! (node.equals(curr))){
+			    first = node;
 			}
 		    }
 		    else{
-			if(!(((String)nodes.get(n)).equals(curr))){
-			    second = ((String)nodes.get(n));
+			if(!(node.equals(curr))){
+			    second = node;
 			}
 		    }
 		    System.out.println("Counter n: " +n);
@@ -130,6 +134,7 @@ public class Path{
 		double sLon = q.getLongitude();
 		for (int j = 0; j < nodes.size(); j++){
 		    String node = ((String)nodes.get(j));
+		    node.replaceAll("\\s+","");
 		    if (!(node.equals(curr))){
 			System.out.println("Current neighbor " +node);
 			q.transaction_search_node(node);
@@ -161,7 +166,9 @@ public class Path{
     public ArrayList getPath(double lat0, double lon0, double lat1, double lon1){
 	try{
 	    String startingNode = getClosestPathNode(lat0, lon0);
+	    startingNode.replaceAll("\\s+","");
 	    String endNode = getClosestPathNode(lat1,lon1);
+	    endNode.replaceAll("\\s+","");
 	    NodeComparable nc = new NodeComparable();
 	    nc.setTarget(endNode);
 	    PriorityQueue<ArrayList> pq = new PriorityQueue<ArrayList>(10, nc);
@@ -209,7 +216,7 @@ public class Path{
 		
 		for (int i = 0; i < neighbors.size(); i++){
 		    String neighbor = (String) (neighbors.get(i));
-		    System.out.println(neighbor.length());
+		    neighbor.replaceAll("\\s+","");
 		    if (! path.contains(neighbor)){
 			double dist = (double)(path.get(0));
 			double ele = 1.0;
