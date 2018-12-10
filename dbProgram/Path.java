@@ -220,9 +220,11 @@ public class Path{
 			System.out.print(path.get(i) + " ");
 		    }
 		    if (! path.contains(neighbor)){
-			double dist = (double)(path.get(0));
-			double ele = 1.0;
+			System.out.println("test");
+			Double dist = (Double)(path.get(0));
+			Double ele = 1.0;
 			q.transaction_search_node(neighbor);
+			
 			Double neighborEle = q.getElevation();
 			Double neighborLat = q.getLatitude();
 			Double neighborLon = q.getLongitude();
