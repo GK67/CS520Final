@@ -139,7 +139,7 @@ public class Path{
 			if ( distance(nLat,nLon,cLat,cLon) < distance(fLat,fLon,cLat,cLon)){
 			    first = node;
 			}
-			else if (distance(nLat, nLon, cLat, cLon) < distance(sLat,sLon,cLat, cLon)){
+			else if ( !node.equals(first) && distance(nLat, nLon, cLat, cLon) < distance(sLat,sLon,cLat, cLon)){
 			    second = node;
 			}
 		    }
