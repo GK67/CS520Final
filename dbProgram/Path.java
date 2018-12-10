@@ -78,9 +78,11 @@ public class Path{
 	}
 	return null;
     }
-    public ArrayList allNeighbors(String curr){
+    public ArrayList allNeighbors(ArrayList currT){
 	try{
 	    ArrayList output = new ArrayList();
+	    String curr = (String)(currT.get(0));
+	    String walkedWay = (String)(currT.get(1));
 	    ArrayList ways = q.transaction_search_way(curr);
 	    System.out.print(curr + "node :");
 	    System.out.println(ways);
@@ -98,7 +100,9 @@ public class Path{
 			tuple.add(way);
 			output.add(tuple);
 		    }
-		    hasWalked.add(way);
+		    if (walkedWay.equal(way)){
+			hasWalked.add(way);
+		    }
 		}
 	    }
 	    return output;
@@ -215,22 +219,23 @@ public class Path{
 	    pq.add(temp);
 	    System.out.println("Priority Queue initialized");
 	    ArrayList path = (ArrayList)(pq.peek());
-	    String node = (String) (path.get(path.size()-1));
+	    ArrayList nodeT = (ArrayList)(path.get(path.size() -1));
+	    String node = (String) (nodeT.get(0));
 	    while (pq.size() > 0 && !(node.equals(endNode))   ){
 		path = (ArrayList)(pq.peek());
+		nodeT = (ArrayList)(path.get(path.size() -1));
 		System.out.println(pq.remove(path));
-		node = (String)(path.get(path.size() - 1));
+		node = (String)(nodeT.get(0));
 		q.transaction_search_node(node);
 		Double nEle = q.getElevation();
 		Double nLat = q.getLatitude();
 		Double nLon = q.getLongitude();
 		System.out.println("Attempt to start neighbor search");
-		ArrayList neighbors = allNeighbors(node);
+		ArrayList neighbors = nearestNeighbors(nodeT);
 		System.out.println(neighbors);
 		boolean walkedPath = false;
 		for (int i = 0; i < neighbors.size(); i++){
 		    ArrayList tuple = (ArrayList)(neighbors.get(i));
-		    String way = (String)(tuple.get(1));
 		    ArrayList newPath = new ArrayList(path);
 		    String neighbor = (String) (tuple.get(0));
 		    neighbor = neighbor.replaceAll("\\s+","");
