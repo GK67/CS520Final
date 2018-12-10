@@ -219,6 +219,7 @@ public class Path{
 		    for (int z = 0; z < path.size(); z++){
 			System.out.print(path.get(z) + " ");
 		    }
+		    System.out.println();
 		    if (! path.contains(neighbor)){
 			System.out.println("test");
 			Double dist = (Double)(path.get(0));
