@@ -52,7 +52,9 @@ public class Path{
 	try{
 	    ArrayList nodesInWays = q.transaction_search_all_node();
 	    String closest = (String)(nodesInWays.get(0));
-	    System.out.println(closest);
+	    for (int i = 0; i < nodesInWays.size(); i++){
+		System.out.println(nodesInWays.get(i));
+	    }
 	    q.transaction_search_node(closest);
 	    double newLat = q.getLatitude();
 	    double newLon = q.getLongitude();
