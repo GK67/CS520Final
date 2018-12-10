@@ -98,7 +98,7 @@ public class Path{
 			tuple.add(way);
 			output.add(tuple);
 		    }
-		    hasWalked(way);
+		    hasWalked.add(way);
 		}
 	    }
 	    return output;
