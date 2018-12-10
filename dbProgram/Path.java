@@ -206,6 +206,7 @@ public class Path{
 		System.out.println("Attempt to start neighbor search");
 		ArrayList neighbors = nearestNeighbors(node);
 		System.out.println(neighbors);
+		System.out.println(neighbors.length());
 		for (int i = 0; i < neighbors.size(); i++){
 		    String neighbor = (String) (neighbors.get(i));
 		    if (! path.contains(neighbor)){
