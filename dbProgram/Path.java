@@ -58,14 +58,16 @@ public class Path{
 	    double newLon = q.getLongitude();
 	    double least = distance(lat, lon, newLat, newLon);
 	    for (int i = 1; i < nodesInWays.size(); i++){
-		System.out.println("coords: "+ newLat + " " + newLon);
 		q.transaction_search_node((String)(nodesInWays.get(i)));
 		newLat = q.getLatitude();
 		newLon = q.getLongitude();
-		double dist = distance(lat, lon,newLat,newLon);
-		if (least > dist){
-		    least = dist;
-		    closest = (String)(nodesInWays.get(i));
+		System.out.println("coords: "+ newLat + " " + newLon);
+		if (newLat != null && newLon != null){
+		    double dist = distance(lat, lon,newLat,newLon);
+		    if (least > dist){
+			least = dist;
+			closest = (String)(nodesInWays.get(i));
+		    }
 		}
 	    }
 	    return closest;
