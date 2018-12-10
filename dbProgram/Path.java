@@ -57,9 +57,7 @@ public class Path{
 	    Double newLat = q.getLatitude();
 	    Double newLon = q.getLongitude();
 	    Double least = distance(lat, lon, newLat, newLon);
-	    System.out.println(nodesInWays.size());
 	    for (int i = 1; i < nodesInWays.size(); i++){
-		System.out.println(i);
 		q.transaction_search_node((String)(nodesInWays.get(i)));
 		newLat = q.getLatitude();
 		newLon = q.getLongitude();
@@ -70,8 +68,6 @@ public class Path{
 			closest = (String)(nodesInWays.get(i));
 		    }
 		}
-		System.out.println(i);
-		System.out.println(closest);
 	    }
 	    return closest;
 	}
