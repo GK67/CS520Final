@@ -189,11 +189,11 @@ public class Path{
 	    pq.add(temp);
 	    System.out.println("Priority Queue initialized");
 	    ArrayList path = (ArrayList)(pq.peek());
-	    for (int i = 0; i < path.size(); i++){
-		System.out.println(path.get(i));
-	    }
-	    System.out.println(endNode);
 	    while (pq.size() > 0 && !(((String) (path.get(path.size()-1))) .equals(endNode))   ){
+		System.out.print("Path: ");
+		for (int i = 0; i < path.size(); i++){
+		    System.out.print(path.get(i) + " ");
+		}
 		path = (ArrayList)(pq.peek());
 		pq.remove(path);
 		String node = (String)(path.get(path.size() - 1));
@@ -203,6 +203,7 @@ public class Path{
 		Double nLon = q.getLongitude();
 		System.out.println("Attempt to start neighbor search");
 		ArrayList neighbors = nearestNeighbors(node);
+		System.out.println(neighbors);
 		for (int i = 0; i < neighbors.size(); i++){
 		    String neighbor = (String) (neighbors.get(i));
 		    System.out.println("1"+neighbor);
