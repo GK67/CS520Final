@@ -183,7 +183,7 @@ public class Path{
 		Double nLat = q.getLatitude();
 		Double nLon = q.getLongitude();
 		System.out.println("Attempt to start neighbor search");
-		neighbors = nearestNeighbors(node);
+		ArrayList neighbors = nearestNeighbors(node);
 		for (int i = 0; i < neighbors.size(); i++){
 		    System.out.println("Finding Neighbors");
 		    String neighbor = (String) (neighbors.get(i));
