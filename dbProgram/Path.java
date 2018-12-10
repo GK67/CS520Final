@@ -183,7 +183,7 @@ public class Path{
 			Double neighborEle = q.getElevation();
 			Double neighborLat = q.getLatitude();
 			Double neighborLon = q.getLongitude();
-			if (nEle != null && nLat != null && nLon != null && neighborEle != null && neighborLat != null && neighborLong != null){
+			if (nEle != null && nLat != null && nLon != null && neighborEle != null && neighborLat != null && neighborLon != null){
 			    if (neighborEle > nEle){
 				ele = 1.3;
 			    }
