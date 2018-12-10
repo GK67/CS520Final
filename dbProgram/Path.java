@@ -80,8 +80,8 @@ public class Path{
 	try{
 	    ArrayList output = new ArrayList();
 	    ArrayList ways = q.transaction_search_way(curr);
-
-	    System.out.println(ways.size());
+	    System.out.print(curr + " :");
+	    System.out.println(ways);
 	    for (int i = 0; i < ways.size(); i ++){
 		String way = (String)(ways.get(i));
 		way = way.replaceAll("\\s+","");
