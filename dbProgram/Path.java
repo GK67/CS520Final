@@ -138,7 +138,7 @@ public class Path{
 			q.transaction_search_node(curr);
 			double cLat = q.getLatitude();
 			double cLon = q.getLongitude();
-			if ( distance(nLat,nLon,cLat,cLon) < distance(fLat,fLon,cLat,cLon)){
+			if ( !node.equals(second) &&distance(nLat,nLon,cLat,cLon) < distance(fLat,fLon,cLat,cLon)){
 			    first = node;
 			}
 			else if ( !node.equals(first) && distance(nLat, nLon, cLat, cLon) < distance(sLat,sLon,cLat, cLon)){
