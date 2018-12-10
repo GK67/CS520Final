@@ -1,3 +1,4 @@
+package final;
 
 import org.json.JSONObject;
 import java.io.InputStream;
@@ -21,7 +22,7 @@ import java.io.File;
 import java.util.*;
 import java.io.*;
 
-public class convertData{
+public class ConvertData{
      public static String convertStreamToString(InputStream is) {
 
 	BufferedReader reader = new BufferedReader(new InputStreamReader(is));
