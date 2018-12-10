@@ -12,7 +12,7 @@ public class MockProgram {
         }
 
         //create mock data
-        ArrayList output=new ArrayList();
+        ArrayList output=ConvertData.nodesToArray("./testdata");/*
         int i=10;
         String id="42949710";
         Double la=42.3787077;
@@ -29,10 +29,10 @@ public class MockProgram {
             node.add(el);
             el-=i;
             output.add(node);
-        }
+	    }*/
         
-        ArrayList outputWayList=new ArrayList();
-        
+        ArrayList outputWayList= ConvertData.waysToArray("./testdata");
+        /*
         int j=0;
         String idW="429497109";
         String sName="abc";
@@ -58,7 +58,7 @@ public class MockProgram {
             else
                 outputWay.add(bName+Integer.toString(j));
             outputWayList.add(outputWay);
-        }
+	    }*/
 
         //create mock data end
 
