@@ -116,6 +116,7 @@ public class Path{
 			    second = ((String)nodes.get(n));
 			}
 		    }
+		    System.out.println("Counter n: " +n);
 		    n++;
 		}
 		if (first == null){
