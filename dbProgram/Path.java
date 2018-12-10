@@ -208,7 +208,6 @@ public class Path{
 		System.out.println(neighbors);
 		for (int i = 0; i < neighbors.size(); i++){
 		    String neighbor = (String) (neighbors.get(i));
-		    System.out.println(neighbor);
 		    if (! path.contains(neighbor)){
 			double dist = (double)(path.get(0));
 			double ele = 1.0;
@@ -216,6 +215,7 @@ public class Path{
 			Double neighborEle = q.getElevation();
 			Double neighborLat = q.getLatitude();
 			Double neighborLon = q.getLongitude();
+			System.out.println("Data found on :" + neighbor);
 			if (nEle != null && nLat != null && nLon != null && neighborEle != null && neighborLat != null && neighborLon != null){
 			    if (neighborEle > nEle){
 				ele = 1.3;
