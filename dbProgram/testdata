@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.55.5 2ca3f387">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2018-12-06T22:18:02Z"/>
+
+  <bounds minlat="42.3897000" minlon="-72.5308000" maxlat="42.3907000" maxlon="-72.5291000"/>
+
+  <node id="66590928" lat="42.3902430" lon="-72.5303890" version="2" timestamp="2013-05-09T08:34:40Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66591571" lat="42.3905819" lon="-72.5304446" version="2" timestamp="2012-02-10T04:29:20Z" changeset="10640272" uid="23351" user="JasonWoof">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66599466" lat="42.3906717" lon="-72.5260050" version="3" timestamp="2014-11-06T18:59:27Z" changeset="26599529" uid="491702" user="askewchan">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66603061" lat="42.3883760" lon="-72.5295870" version="1" timestamp="2007-10-12T14:13:40Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66610257" lat="42.3895184" lon="-72.5300924" version="2" timestamp="2011-09-25T02:41:18Z" changeset="9389123" uid="23351" user="JasonWoof">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66613736" lat="42.3881330" lon="-72.5292980" version="1" timestamp="2007-10-12T14:21:49Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66618452" lat="42.3902200" lon="-72.5319278" version="2" timestamp="2012-02-10T04:29:21Z" changeset="10640272" uid="23351" user="JasonWoof">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66619669" lat="42.3902190" lon="-72.5303790" version="2" timestamp="2013-05-09T08:34:42Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66621839" lat="42.3881950" lon="-72.5293810" version="1" timestamp="2007-10-12T14:27:34Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66627074" lat="42.3884500" lon="-72.5296400" version="1" timestamp="2007-10-12T14:31:55Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66627723" lat="42.3903930" lon="-72.5302420" version="2" timestamp="2013-05-09T08:34:42Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66628896" lat="42.3880740" lon="-72.5292290" version="1" timestamp="2007-10-12T14:33:09Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66630860" lat="42.3879530" lon="-72.5291450" version="1" timestamp="2007-10-12T14:34:34Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66632740" lat="42.3877270" lon="-72.5290300" version="1" timestamp="2007-10-12T14:35:58Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66638823" lat="42.3901002" lon="-72.5291380" version="2" timestamp="2011-09-24T00:36:15Z" changeset="9380941" uid="23351" user="JasonWoof">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66645458" lat="42.3885110" lon="-72.5296700" version="1" timestamp="2007-10-12T14:45:39Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66646405" lat="42.3898600" lon="-72.5307200" version="2" timestamp="2013-05-09T08:34:44Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66648852" lat="42.3881140" lon="-72.5292710" version="1" timestamp="2007-10-12T14:47:58Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66652040" lat="42.3902820" lon="-72.5303910" version="2" timestamp="2013-05-09T08:34:44Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66655774" lat="42.3898780" lon="-72.5305720" version="2" timestamp="2013-05-09T08:34:44Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66656208" lat="42.3909190" lon="-72.5297000" version="1" timestamp="2007-10-12T14:52:40Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66660929" lat="42.3903498" lon="-72.5323994" version="2" timestamp="2012-02-10T04:29:22Z" changeset="10640272" uid="23351" user="JasonWoof">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66669518" lat="42.3902670" lon="-72.5303930" version="2" timestamp="2013-05-09T08:34:45Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66669954" lat="42.3884800" lon="-72.5296550" version="1" timestamp="2007-10-12T15:01:35Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66674389" lat="42.3902970" lon="-72.5303860" version="2" timestamp="2013-05-09T08:34:45Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66675600" lat="42.3903730" lon="-72.5302840" version="2" timestamp="2013-05-09T08:34:45Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66677295" lat="42.3909000" lon="-72.5298190" version="1" timestamp="2007-10-12T15:06:04Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66678271" lat="42.3904663" lon="-72.5307317" version="2" timestamp="2012-02-10T04:29:22Z" changeset="10640272" uid="23351" user="JasonWoof">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66678768" lat="42.3877880" lon="-72.5290600" version="1" timestamp="2007-10-12T15:06:54Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66680288" lat="42.3881520" lon="-72.5293240" version="1" timestamp="2007-10-12T15:07:47Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66685291" lat="42.3902735" lon="-72.5323083" version="2" timestamp="2012-02-10T04:29:23Z" changeset="10640272" uid="23351" user="JasonWoof">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66685474" lat="42.3907770" lon="-72.5301268" version="2" timestamp="2012-02-10T04:29:23Z" changeset="10640272" uid="23351" user="JasonWoof">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66691746" lat="42.3903110" lon="-72.5303780" version="2" timestamp="2013-05-09T08:34:46Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66691782" lat="42.3883980" lon="-72.5296050" version="1" timestamp="2007-10-12T15:15:02Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66691821" lat="42.3878500" lon="-72.5290900" version="1" timestamp="2007-10-12T15:15:05Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66694809" lat="42.3904680" lon="-72.5301000" version="2" timestamp="2013-05-09T08:34:46Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66695165" lat="42.3879940" lon="-72.5291690" version="1" timestamp="2007-10-12T15:19:24Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66696169" lat="42.3907621" lon="-72.5251721" version="2" timestamp="2016-07-11T15:17:16Z" changeset="40652775" uid="23351" user="JasonWoof">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66698331" lat="42.3897790" lon="-72.5313590" version="2" timestamp="2013-05-09T08:34:46Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66700778" lat="42.3883300" lon="-72.5295440" version="1" timestamp="2007-10-12T15:25:46Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66703173" lat="42.3884200" lon="-72.5296220" version="1" timestamp="2007-10-12T15:28:32Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66704310" lat="42.3880940" lon="-72.5292470" version="1" timestamp="2007-10-12T15:29:26Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66708184" lat="42.3901960" lon="-72.5303680" version="2" timestamp="2013-05-09T08:34:47Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66711423" lat="42.3909250" lon="-72.5295750" version="1" timestamp="2007-10-12T15:35:15Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66711701" lat="42.3904130" lon="-72.5302000" version="2" timestamp="2013-05-09T08:34:47Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66713329" lat="42.3903380" lon="-72.5303440" version="2" timestamp="2013-05-09T08:34:47Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66713780" lat="42.3879120" lon="-72.5291230" version="1" timestamp="2007-10-12T15:37:52Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66714320" lat="42.3882820" lon="-72.5294910" version="1" timestamp="2007-10-12T15:38:43Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66714560" lat="42.3883060" lon="-72.5295180" version="1" timestamp="2007-10-12T15:39:04Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66723716" lat="42.3880540" lon="-72.5292120" version="1" timestamp="2007-10-12T15:47:44Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66725794" lat="42.3903663" lon="-72.5312745" version="2" timestamp="2012-02-10T04:29:24Z" changeset="10640272" uid="23351" user="JasonWoof">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66727249" lat="42.3880340" lon="-72.5291960" version="1" timestamp="2007-10-12T15:50:20Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66731532" lat="42.3905230" lon="-72.5300000" version="2" timestamp="2013-05-09T08:34:49Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66733850" lat="42.3898920" lon="-72.5304650" version="2" timestamp="2013-05-09T08:34:49Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66736840" lat="42.3883540" lon="-72.5295680" version="1" timestamp="2007-10-12T15:56:35Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66745044" lat="42.3899040" lon="-72.5303570" version="2" timestamp="2013-05-09T08:34:49Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66749243" lat="42.3903260" lon="-72.5303630" version="2" timestamp="2013-05-09T08:34:49Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66750820" lat="42.3882380" lon="-72.5294370" version="1" timestamp="2007-10-12T16:05:32Z" changeset="120974" uid="15750" user="MassGIS Import">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66752458" lat="42.3903500" lon="-72.5303230" version="2" timestamp="2013-05-09T08:34:49Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66767369" lat="42.3899150" lon="-72.5302490" version="2" timestamp="2013-05-09T08:34:51Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66768012" lat="42.3908496" lon="-72.5299800" version="2" timestamp="2012-02-10T04:29:24Z" changeset="10640272" uid="23351" user="JasonWoof">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66769083" lat="42.3905780" lon="-72.5299010" version="2" timestamp="2013-05-09T08:34:51Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="66769373" lat="42.3890386" lon="-72.5298855" version="2" timestamp="2011-09-24T00:36:14Z" changeset="9380941" uid="23351" user="JasonWoof">
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </node>
+  <node id="66771397" lat="42.3898690" lon="-72.5306460" version="2" timestamp="2013-05-09T08:34:51Z" changeset="16043494" uid="23351" user="JasonWoof"/>
+  <node id="494243022" lat="42.3908489" lon="-72.5287564" version="2" timestamp="2011-09-25T02:41:20Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="494243023" lat="42.3908048" lon="-72.5289527" version="2" timestamp="2011-09-25T02:41:12Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="494243024" lat="42.3904403" lon="-72.5288027" version="2" timestamp="2011-09-25T02:41:06Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="494243025" lat="42.3903729" lon="-72.5291028" version="2" timestamp="2011-09-25T02:41:25Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="494243026" lat="42.3907394" lon="-72.5292537" version="2" timestamp="2011-09-25T02:41:24Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="494243027" lat="42.3906959" lon="-72.5294471" version="2" timestamp="2011-09-25T02:41:15Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="494243029" lat="42.3904369" lon="-72.5285867" version="2" timestamp="2011-09-25T02:41:35Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1439024779" lat="42.3903880" lon="-72.5278483" version="1" timestamp="2011-09-21T05:37:23Z" changeset="9357341" uid="23351" user="JasonWoof"/>
+  <node id="1439024875" lat="42.3904424" lon="-72.5275048" version="1" timestamp="2011-09-21T05:37:27Z" changeset="9357341" uid="23351" user="JasonWoof"/>
+  <node id="1439024926" lat="42.3904764" lon="-72.5272821" version="1" timestamp="2011-09-21T05:37:29Z" changeset="9357341" uid="23351" user="JasonWoof"/>
+  <node id="1439024956" lat="42.3901969" lon="-72.5287380" version="2" timestamp="2011-09-24T00:36:15Z" changeset="9380941" uid="23351" user="JasonWoof"/>
+  <node id="1439024973" lat="42.3905801" lon="-72.5266251" version="1" timestamp="2011-09-21T05:37:31Z" changeset="9357341" uid="23351" user="JasonWoof"/>
+  <node id="1439024988" lat="42.3903586" lon="-72.5280162" version="1" timestamp="2011-09-21T05:37:32Z" changeset="9357341" uid="23351" user="JasonWoof"/>
+  <node id="1443766394" lat="42.3891824" lon="-72.5299470" version="1" timestamp="2011-09-24T00:35:41Z" changeset="9380941" uid="23351" user="JasonWoof"/>
+  <node id="1443766397" lat="42.3910477" lon="-72.5282238" version="2" timestamp="2017-12-08T14:04:08Z" changeset="54459961" uid="7171922" user="BolducM"/>
+  <node id="1443766427" lat="42.3887713" lon="-72.5297763" version="1" timestamp="2011-09-24T00:35:42Z" changeset="9380941" uid="23351" user="JasonWoof"/>
+  <node id="1443766462" lat="42.3897830" lon="-72.5296274" version="1" timestamp="2011-09-24T00:35:44Z" changeset="9380941" uid="23351" user="JasonWoof"/>
+  <node id="1443766473" lat="42.3902689" lon="-72.5284168" version="1" timestamp="2011-09-24T00:35:44Z" changeset="9380941" uid="23351" user="JasonWoof"/>
+  <node id="1443766489" lat="42.3900505" lon="-72.5292366" version="1" timestamp="2011-09-24T00:35:45Z" changeset="9380941" uid="23351" user="JasonWoof"/>
+  <node id="1443766504" lat="42.3907582" lon="-72.5252482" version="1" timestamp="2011-09-24T00:35:46Z" changeset="9380941" uid="23351" user="JasonWoof"/>
+  <node id="1443766531" lat="42.3907166" lon="-72.5295747" version="1" timestamp="2011-09-24T00:35:47Z" changeset="9380941" uid="23351" user="JasonWoof"/>
+  <node id="1443766584" lat="42.3907672" lon="-72.5280905" version="1" timestamp="2011-09-24T00:35:49Z" changeset="9380941" uid="23351" user="JasonWoof"/>
+  <node id="1443766606" lat="42.3909323" lon="-72.5286270" version="1" timestamp="2011-09-24T00:35:50Z" changeset="9380941" uid="23351" user="JasonWoof"/>
+  <node id="1445169817" lat="42.3897349" lon="-72.5296293" version="1" timestamp="2011-09-25T02:40:13Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445169845" lat="42.3903780" lon="-72.5290800" version="1" timestamp="2011-09-25T02:40:14Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445169849" lat="42.3895414" lon="-72.5301014" version="1" timestamp="2011-09-25T02:40:14Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445169887" lat="42.3902427" lon="-72.5291385" version="1" timestamp="2011-09-25T02:40:16Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445169906" lat="42.3897077" lon="-72.5300283" version="1" timestamp="2011-09-25T02:40:17Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445169916" lat="42.3903424" lon="-72.5300928" version="1" timestamp="2011-09-25T02:40:17Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445169943" lat="42.3903992" lon="-72.5285865" version="1" timestamp="2011-09-25T02:40:18Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445169962" lat="42.3903626" lon="-72.5298701" version="1" timestamp="2011-09-25T02:40:19Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445169970" lat="42.3904288" lon="-72.5288542" version="1" timestamp="2011-09-25T02:40:19Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445169988" lat="42.3902717" lon="-72.5298096" version="1" timestamp="2011-09-25T02:40:20Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170042" lat="42.3904600" lon="-72.5285963" version="1" timestamp="2011-09-25T02:40:22Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170097" lat="42.3903268" lon="-72.5295695" version="1" timestamp="2011-09-25T02:40:25Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170121" lat="42.3896687" lon="-72.5297471" version="1" timestamp="2011-09-25T02:40:25Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170151" lat="42.3897293" lon="-72.5300459" version="1" timestamp="2011-09-25T02:40:26Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170186" lat="42.3909894" lon="-72.5283568" version="2" timestamp="2017-12-08T14:04:08Z" changeset="54459961" uid="7171922" user="BolducM"/>
+  <node id="1445170214" lat="42.3905213" lon="-72.5296299" version="1" timestamp="2011-09-25T02:40:27Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170257" lat="42.3903498" lon="-72.5286618" version="1" timestamp="2011-09-25T02:40:29Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170277" lat="42.3903655" lon="-72.5294014" version="1" timestamp="2011-09-25T02:40:29Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170292" lat="42.3903150" lon="-72.5300791" version="1" timestamp="2011-09-25T02:40:30Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170305" lat="42.3906492" lon="-72.5297334" version="1" timestamp="2011-09-25T02:40:31Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170316" lat="42.3904338" lon="-72.5286007" version="1" timestamp="2011-09-25T02:40:31Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170325" lat="42.3907917" lon="-72.5292447" version="1" timestamp="2011-09-25T02:40:31Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170330" lat="42.3906076" lon="-72.5298312" version="1" timestamp="2011-09-25T02:40:32Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170364" lat="42.3899688" lon="-72.5296865" version="1" timestamp="2011-09-25T02:40:33Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170383" lat="42.3895952" lon="-72.5299932" version="1" timestamp="2011-09-25T02:40:34Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170385" lat="42.3908279" lon="-72.5287478" version="1" timestamp="2011-09-25T02:40:34Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170436" lat="42.3902756" lon="-72.5291520" version="1" timestamp="2011-09-25T02:40:36Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170454" lat="42.3897106" lon="-72.5299736" version="1" timestamp="2011-09-25T02:40:37Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170477" lat="42.3896283" lon="-72.5298799" version="1" timestamp="2011-09-25T02:40:38Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170478" lat="42.3903795" lon="-72.5286741" version="1" timestamp="2011-09-25T02:40:38Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170498" lat="42.3902731" lon="-72.5302627" version="1" timestamp="2011-09-25T02:40:38Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170505" lat="42.3908432" lon="-72.5290183" version="1" timestamp="2011-09-25T02:40:39Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170529" lat="42.3902772" lon="-72.5297857" version="1" timestamp="2011-09-25T02:40:40Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170538" lat="42.3888318" lon="-72.5298010" version="1" timestamp="2011-09-25T02:40:40Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170570" lat="42.3907280" lon="-72.5295245" version="1" timestamp="2011-09-25T02:40:41Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170602" lat="42.3893430" lon="-72.5300165" version="1" timestamp="2011-09-25T02:40:43Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1445170606" lat="42.3902531" lon="-72.5292520" version="1" timestamp="2011-09-25T02:40:43Z" changeset="9389123" uid="23351" user="JasonWoof"/>
+  <node id="1603680030" lat="42.3894833" lon="-72.5308036" version="1" timestamp="2012-01-24T15:43:09Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680042" lat="42.3895511" lon="-72.5304699" version="1" timestamp="2012-01-24T15:43:09Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680045" lat="42.3895956" lon="-72.5304865" version="1" timestamp="2012-01-24T15:43:09Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680049" lat="42.3896193" lon="-72.5303699" version="1" timestamp="2012-01-24T15:43:09Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680062" lat="42.3897306" lon="-72.5299962" version="1" timestamp="2012-01-24T15:43:10Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680065" lat="42.3897598" lon="-72.5308958" version="1" timestamp="2012-01-24T15:43:10Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680069" lat="42.3897869" lon="-72.5306059" version="1" timestamp="2012-01-24T15:43:10Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680075" lat="42.3898061" lon="-72.5296531" version="1" timestamp="2012-01-24T15:43:10Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680077" lat="42.3898164" lon="-72.5306169" version="1" timestamp="2012-01-24T15:43:10Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680079" lat="42.3898197" lon="-72.5304445" version="1" timestamp="2012-01-24T15:43:10Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680109" lat="42.3901641" lon="-72.5310531" version="1" timestamp="2012-01-24T15:43:11Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680126" lat="42.3902292" lon="-72.5307904" version="1" timestamp="2012-01-24T15:43:12Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680132" lat="42.3902621" lon="-72.5302069" version="1" timestamp="2012-01-24T15:43:12Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680134" lat="42.3903143" lon="-72.5311213" version="1" timestamp="2012-01-24T15:43:12Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680136" lat="42.3903376" lon="-72.5298700" version="1" timestamp="2012-01-24T15:43:12Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680139" lat="42.3903424" lon="-72.5304883" version="1" timestamp="2012-01-24T15:43:12Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680148" lat="42.3903794" lon="-72.5308587" version="1" timestamp="2012-01-24T15:43:12Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680151" lat="42.3904347" lon="-72.5305832" version="1" timestamp="2012-01-24T15:43:13Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680152" lat="42.3904825" lon="-72.5302386" version="1" timestamp="2012-01-24T15:43:13Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680156" lat="42.3905413" lon="-72.5302954" version="1" timestamp="2012-01-24T15:43:13Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680158" lat="42.3905743" lon="-72.5303372" version="1" timestamp="2012-01-24T15:43:13Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680160" lat="42.3905903" lon="-72.5302243" version="1" timestamp="2012-01-24T15:43:13Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680161" lat="42.3906026" lon="-72.5301622" version="1" timestamp="2012-01-24T15:43:13Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680166" lat="42.3906056" lon="-72.5302005" version="1" timestamp="2012-01-24T15:43:13Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680167" lat="42.3906077" lon="-72.5301446" version="1" timestamp="2012-01-24T15:43:13Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680169" lat="42.3906165" lon="-72.5301300" version="1" timestamp="2012-01-24T15:43:13Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680170" lat="42.3906196" lon="-72.5302238" version="1" timestamp="2012-01-24T15:43:13Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680171" lat="42.3906234" lon="-72.5302661" version="1" timestamp="2012-01-24T15:43:13Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680172" lat="42.3906309" lon="-72.5301184" version="1" timestamp="2012-01-24T15:43:13Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680174" lat="42.3906338" lon="-72.5302333" version="1" timestamp="2012-01-24T15:43:13Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680181" lat="42.3906502" lon="-72.5301151" version="1" timestamp="2012-01-24T15:43:14Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680182" lat="42.3906521" lon="-72.5302351" version="1" timestamp="2012-01-24T15:43:14Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680184" lat="42.3906627" lon="-72.5302314" version="1" timestamp="2012-01-24T15:43:14Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680185" lat="42.3906688" lon="-72.5301231" version="1" timestamp="2012-01-24T15:43:14Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680187" lat="42.3906732" lon="-72.5302234" version="1" timestamp="2012-01-24T15:43:14Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680189" lat="42.3906823" lon="-72.5301397" version="1" timestamp="2012-01-24T15:43:14Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680190" lat="42.3906824" lon="-72.5302105" version="1" timestamp="2012-01-24T15:43:14Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680197" lat="42.3906881" lon="-72.5301544" version="1" timestamp="2012-01-24T15:43:14Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1603680198" lat="42.3906906" lon="-72.5301811" version="1" timestamp="2012-01-24T15:43:14Z" changeset="10485593" uid="23351" user="JasonWoof"/>
+  <node id="1626446838" lat="42.3901895" lon="-72.5320452" version="1" timestamp="2012-02-10T04:28:45Z" changeset="10640272" uid="23351" user="JasonWoof"/>
+  <node id="1626446839" lat="42.3902080" lon="-72.5321736" version="1" timestamp="2012-02-10T04:28:45Z" changeset="10640272" uid="23351" user="JasonWoof"/>
+  <node id="2265334670" lat="42.3903330" lon="-72.5307684" version="1" timestamp="2013-04-13T02:32:02Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334671" lat="42.3903491" lon="-72.5307057" version="1" timestamp="2013-04-13T02:32:02Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334672" lat="42.3903635" lon="-72.5307827" version="1" timestamp="2013-04-13T02:32:02Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334673" lat="42.3903796" lon="-72.5307200" version="1" timestamp="2013-04-13T02:32:02Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334686" lat="42.3901548" lon="-72.5306812" version="1" timestamp="2013-04-13T02:32:02Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334687" lat="42.3901369" lon="-72.5307600" version="1" timestamp="2013-04-13T02:32:02Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334688" lat="42.3901134" lon="-72.5306303" version="1" timestamp="2013-04-13T02:32:03Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334689" lat="42.3901064" lon="-72.5306611" version="1" timestamp="2013-04-13T02:32:03Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334690" lat="42.3902213" lon="-72.5306751" version="1" timestamp="2013-04-13T02:32:03Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334691" lat="42.3900118" lon="-72.5305890" version="1" timestamp="2013-04-13T02:32:03Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334692" lat="42.3900722" lon="-72.5306140" version="1" timestamp="2013-04-13T02:32:03Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334693" lat="42.3902401" lon="-72.5305925" version="1" timestamp="2013-04-13T02:32:03Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334694" lat="42.3900832" lon="-72.5307378" version="1" timestamp="2013-04-13T02:32:03Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334695" lat="42.3900040" lon="-72.5307204" version="1" timestamp="2013-04-13T02:32:03Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334696" lat="42.3900005" lon="-72.5307355" version="1" timestamp="2013-04-13T02:32:03Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334697" lat="42.3900911" lon="-72.5305308" version="1" timestamp="2013-04-13T02:32:03Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334698" lat="42.3900800" lon="-72.5307519" version="1" timestamp="2013-04-13T02:32:03Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2265334699" lat="42.3899804" lon="-72.5307272" version="1" timestamp="2013-04-13T02:32:03Z" changeset="15707935" uid="1137433" user="jremillard-massgis"/>
+  <node id="2529252095" lat="42.3904033" lon="-72.5304729" version="1" timestamp="2013-11-12T13:30:56Z" changeset="18855192" uid="327264" user="Vincent Dém">
+    <tag k="name" v="Outing club gear locker"/>
+  </node>
+  <node id="3085495700" lat="42.3896246" lon="-72.5308515" version="1" timestamp="2014-09-19T02:02:35Z" changeset="25532460" uid="2345544" user="sulsull"/>
+  <node id="3085495703" lat="42.3896740" lon="-72.5308704" version="1" timestamp="2014-09-19T02:02:35Z" changeset="25532460" uid="2345544" user="sulsull"/>
+  <node id="3085515639" lat="42.3903169" lon="-72.5292910" version="1" timestamp="2014-09-19T02:48:28Z" changeset="25532702" uid="2345544" user="sulsull"/>
+  <node id="3085515640" lat="42.3902830" lon="-72.5292771" version="1" timestamp="2014-09-19T02:48:28Z" changeset="25532702" uid="2345544" user="sulsull"/>
+  <node id="3085515641" lat="42.3902472" lon="-72.5293957" version="1" timestamp="2014-09-19T02:48:28Z" changeset="25532702" uid="2345544" user="sulsull"/>
+  <node id="3085515642" lat="42.3902155" lon="-72.5298160" version="1" timestamp="2014-09-19T02:48:28Z" changeset="25532702" uid="2345544" user="sulsull"/>
+  <node id="3085515643" lat="42.3901659" lon="-72.5297905" version="1" timestamp="2014-09-19T02:48:28Z" changeset="25532702" uid="2345544" user="sulsull"/>
+  <node id="3085515644" lat="42.3900110" lon="-72.5295521" version="1" timestamp="2014-09-19T02:48:28Z" changeset="25532702" uid="2345544" user="sulsull"/>
+  <node id="3085515645" lat="42.3900575" lon="-72.5293116" version="1" timestamp="2014-09-19T02:48:28Z" changeset="25532702" uid="2345544" user="sulsull"/>
+  <node id="3085515646" lat="42.3902024" lon="-72.5296152" version="1" timestamp="2014-09-19T02:48:28Z" changeset="25532702" uid="2345544" user="sulsull"/>
+  <node id="3170859578" lat="42.3907163" lon="-72.5256145" version="1" timestamp="2014-11-06T18:59:22Z" changeset="26599529" uid="491702" user="askewchan"/>
+  <node id="4765068358" lat="42.3908686" lon="-72.5309217" version="1" timestamp="2017-03-30T20:56:23Z" changeset="47306122" uid="5184060" user="TheLastRaven"/>
+  <node id="4765068359" lat="42.3905581" lon="-72.5306905" version="1" timestamp="2017-03-30T20:56:23Z" changeset="47306122" uid="5184060" user="TheLastRaven"/>
+  <node id="4765068360" lat="42.3906858" lon="-72.5303706" version="1" timestamp="2017-03-30T20:56:23Z" changeset="47306122" uid="5184060" user="TheLastRaven"/>
+  <node id="4765068361" lat="42.3908048" lon="-72.5301838" version="1" timestamp="2017-03-30T20:56:23Z" changeset="47306122" uid="5184060" user="TheLastRaven"/>
+  <node id="4765068362" lat="42.3908910" lon="-72.5300133" version="1" timestamp="2017-03-30T20:56:23Z" changeset="47306122" uid="5184060" user="TheLastRaven"/>
+  <node id="4765068363" lat="42.3911704" lon="-72.5301301" version="1" timestamp="2017-03-30T20:56:23Z" changeset="47306122" uid="5184060" user="TheLastRaven"/>
+  <node id="4765068364" lat="42.3911531" lon="-72.5303799" version="1" timestamp="2017-03-30T20:56:23Z" changeset="47306122" uid="5184060" user="TheLastRaven"/>
+  <node id="4765068365" lat="42.3910358" lon="-72.5306111" version="1" timestamp="2017-03-30T20:56:23Z" changeset="47306122" uid="5184060" user="TheLastRaven"/>
+  <node id="4765068366" lat="42.3909565" lon="-72.5307629" version="1" timestamp="2017-03-30T20:56:23Z" changeset="47306122" uid="5184060" user="TheLastRaven"/>
+  <node id="4792433002" lat="42.3907762" lon="-72.5253038" version="4" timestamp="2017-12-07T15:23:30Z" changeset="54434575" uid="5203725" user="Trevor T"/>
+  <node id="5271944824" lat="42.3909014" lon="-72.5287626" version="1" timestamp="2017-12-08T14:04:08Z" changeset="54459961" uid="7171922" user="BolducM"/>
+  <node id="5850031827" lat="42.3906800" lon="-72.5308087" version="1" timestamp="2018-08-22T23:29:53Z" changeset="61904718" uid="4910322" user="Hamhock666"/>
+  <node id="5850031828" lat="42.3906191" lon="-72.5310116" version="1" timestamp="2018-08-22T23:29:53Z" changeset="61904718" uid="4910322" user="Hamhock666"/>
+  <node id="5850031829" lat="42.3904879" lon="-72.5309455" version="1" timestamp="2018-08-22T23:29:53Z" changeset="61904718" uid="4910322" user="Hamhock666"/>
+  <node id="5850031870" lat="42.3906812" lon="-72.5300004" version="1" timestamp="2018-08-22T23:29:53Z" changeset="61904718" uid="4910322" user="Hamhock666"/>
+  <node id="5850031871" lat="42.3904693" lon="-72.5298282" version="1" timestamp="2018-08-22T23:29:53Z" changeset="61904718" uid="4910322" user="Hamhock666"/>
+  <node id="5850031872" lat="42.3905887" lon="-72.5294317" version="1" timestamp="2018-08-22T23:29:53Z" changeset="61904718" uid="4910322" user="Hamhock666"/>
+  <node id="5850031873" lat="42.3908431" lon="-72.5295699" version="1" timestamp="2018-08-22T23:29:54Z" changeset="61904718" uid="4910322" user="Hamhock666"/>
+  <way id="9058168" version="4" timestamp="2011-09-25T02:41:05Z" changeset="9389123" uid="23351" user="JasonWoof">
+    <nd ref="66632740"/>
+    <nd ref="66678768"/>
+    <nd ref="66691821"/>
+    <nd ref="66713780"/>
+    <nd ref="66630860"/>
+    <nd ref="66695165"/>
+    <nd ref="66727249"/>
+    <nd ref="66723716"/>
+    <nd ref="66628896"/>
+    <nd ref="66704310"/>
+    <nd ref="66648852"/>
+    <nd ref="66613736"/>
+    <nd ref="66680288"/>
+    <nd ref="66621839"/>
+    <nd ref="66750820"/>
+    <nd ref="66714320"/>
+    <nd ref="66714560"/>
+    <nd ref="66700778"/>
+    <nd ref="66736840"/>
+    <nd ref="66603061"/>
+    <nd ref="66691782"/>
+    <nd ref="66703173"/>
+    <nd ref="66627074"/>
+    <nd ref="66669954"/>
+    <nd ref="66645458"/>
+    <nd ref="1443766427"/>
+    <nd ref="1445170538"/>
+    <nd ref="66769373"/>
+    <nd ref="1443766394"/>
+    <nd ref="1445170602"/>
+    <nd ref="66610257"/>
+    <nd ref="1445169849"/>
+    <nd ref="66767369"/>
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="highway" v="service"/>
+    <tag k="massgis:way_id" v="8"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </way>
+  <way id="9058448" version="10" timestamp="2017-12-07T15:23:30Z" changeset="54434575" uid="5203725" user="Trevor T">
+    <nd ref="66638823"/>
+    <nd ref="1439024956"/>
+    <nd ref="1443766473"/>
+    <nd ref="1439024988"/>
+    <nd ref="1439024779"/>
+    <nd ref="1439024875"/>
+    <nd ref="1439024926"/>
+    <nd ref="1439024973"/>
+    <nd ref="66599466"/>
+    <nd ref="3170859578"/>
+    <nd ref="4792433002"/>
+    <nd ref="1443766504"/>
+    <nd ref="66696169"/>
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="footway"/>
+    <tag k="massgis:way_id" v="8"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+  </way>
+  <way id="9058686" version="2" timestamp="2012-02-10T04:29:09Z" changeset="10640272" uid="23351" user="JasonWoof">
+    <nd ref="66660929"/>
+    <nd ref="66685291"/>
+    <nd ref="1626446839"/>
+    <nd ref="1626446838"/>
+    <nd ref="66618452"/>
+    <nd ref="66725794"/>
+    <nd ref="66678271"/>
+    <nd ref="66591571"/>
+    <nd ref="66685474"/>
+    <nd ref="66768012"/>
+    <nd ref="66677295"/>
+    <nd ref="66656208"/>
+    <nd ref="66711423"/>
+    <tag k="attribution" v="Office of Geographic and Environmental Information (MassGIS)"/>
+    <tag k="condition" v="good"/>
+    <tag k="highway" v="service"/>
+    <tag k="lanes" v="2"/>
+    <tag k="massgis:way_id" v="165052"/>
+    <tag k="name" v="Power Plant Road"/>
+    <tag k="source" v="massgis_import_v0.1_20071009100647"/>
+    <tag k="width" v="12.2"/>
+  </way>
+  <way id="40693158" version="6" timestamp="2016-09-28T21:49:56Z" changeset="42505935" uid="491702" user="askewchan">
+    <nd ref="494243022"/>
+    <nd ref="494243023"/>
+    <nd ref="494243024"/>
+    <nd ref="1445169970"/>
+    <nd ref="1445169845"/>
+    <nd ref="494243025"/>
+    <nd ref="494243026"/>
+    <nd ref="494243027"/>
+    <nd ref="3085515639"/>
+    <nd ref="3085515640"/>
+    <nd ref="1445170606"/>
+    <nd ref="1445170436"/>
+    <nd ref="1445169887"/>
+    <nd ref="1445170257"/>
+    <nd ref="1445170478"/>
+    <nd ref="1445169943"/>
+    <nd ref="1445170316"/>
+    <nd ref="494243029"/>
+    <nd ref="1445170042"/>
+    <nd ref="1445170385"/>
+    <nd ref="494243022"/>
+    <tag k="addr:city" v="Amherst"/>
+    <tag k="addr:housenumber" v="240"/>
+    <tag k="addr:postcode" v="01003"/>
+    <tag k="addr:state" v="MA"/>
+    <tag k="addr:street" v="Hicks Way"/>
+    <tag k="building" v="yes"/>
+    <tag k="name" v="Machmer hall"/>
+  </way>
+  <way id="131281170" version="2" timestamp="2016-06-27T22:56:12Z" changeset="40332825" uid="23351" user="JasonWoof">
+    <nd ref="1445170097"/>
+    <nd ref="1445170214"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="131281177" version="2" timestamp="2017-12-08T14:04:08Z" changeset="54459961" uid="7171922" user="BolducM">
+    <nd ref="1443766584"/>
+    <nd ref="1443766397"/>
+    <nd ref="1445170186"/>
+    <nd ref="1443766606"/>
+    <nd ref="5271944824"/>
+    <nd ref="1445170505"/>
+    <nd ref="1445170325"/>
+    <nd ref="1445170570"/>
+    <nd ref="1443766531"/>
+    <nd ref="1445170305"/>
+    <nd ref="1445170330"/>
+    <nd ref="66769083"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="131281178" version="2" timestamp="2016-06-27T22:56:11Z" changeset="40332825" uid="23351" user="JasonWoof">
+    <nd ref="1443766489"/>
+    <nd ref="1445170364"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="131281187" version="2" timestamp="2016-06-27T22:56:11Z" changeset="40332825" uid="23351" user="JasonWoof">
+    <nd ref="66674389"/>
+    <nd ref="1445169916"/>
+    <nd ref="1445170292"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="131281254" version="2" timestamp="2016-06-27T22:56:12Z" changeset="40332825" uid="23351" user="JasonWoof">
+    <nd ref="1445169962"/>
+    <nd ref="1445169988"/>
+    <nd ref="1445170529"/>
+    <nd ref="1445170097"/>
+    <nd ref="1445170277"/>
+    <nd ref="1445170570"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="131281263" version="2" timestamp="2016-06-27T22:56:12Z" changeset="40332825" uid="23351" user="JasonWoof">
+    <nd ref="1445170529"/>
+    <nd ref="1445170214"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="131281271" version="2" timestamp="2013-05-09T08:34:29Z" changeset="16043494" uid="23351" user="JasonWoof">
+    <nd ref="66698331"/>
+    <nd ref="66646405"/>
+    <nd ref="66771397"/>
+    <nd ref="66655774"/>
+    <nd ref="66733850"/>
+    <nd ref="66745044"/>
+    <nd ref="66767369"/>
+    <nd ref="66708184"/>
+    <nd ref="66619669"/>
+    <nd ref="66590928"/>
+    <nd ref="66669518"/>
+    <nd ref="66652040"/>
+    <nd ref="66674389"/>
+    <nd ref="66691746"/>
+    <nd ref="66749243"/>
+    <nd ref="66713329"/>
+    <nd ref="66752458"/>
+    <nd ref="66675600"/>
+    <nd ref="66627723"/>
+    <nd ref="66711701"/>
+    <nd ref="66694809"/>
+    <nd ref="66731532"/>
+    <nd ref="66769083"/>
+    <tag k="highway" v="service"/>
+    <tag k="lanes" v="2"/>
+    <tag k="name" v="Hicks Way"/>
+  </way>
+  <way id="131281283" version="2" timestamp="2016-06-27T22:56:11Z" changeset="40332825" uid="23351" user="JasonWoof">
+    <nd ref="1445170330"/>
+    <nd ref="1445169962"/>
+    <nd ref="1445170292"/>
+    <nd ref="1445170498"/>
+    <nd ref="1445170151"/>
+    <nd ref="1445169906"/>
+    <nd ref="1445170454"/>
+    <nd ref="1443766462"/>
+    <nd ref="1445170364"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="131281315" version="1" timestamp="2011-09-25T02:41:02Z" changeset="9389123" uid="23351" user="JasonWoof">
+    <nd ref="1445170214"/>
+    <nd ref="1445170305"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="131281324" version="2" timestamp="2016-06-27T22:56:11Z" changeset="40332825" uid="23351" user="JasonWoof">
+    <nd ref="1445169817"/>
+    <nd ref="1445170121"/>
+    <nd ref="1445170477"/>
+    <nd ref="1445170383"/>
+    <nd ref="1445169849"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="147156706" version="2" timestamp="2013-05-09T08:34:34Z" changeset="16043494" uid="23351" user="JasonWoof">
+    <nd ref="1603680184"/>
+    <nd ref="1603680182"/>
+    <nd ref="1603680174"/>
+    <nd ref="1603680170"/>
+    <nd ref="1603680166"/>
+    <nd ref="1603680161"/>
+    <nd ref="1603680167"/>
+    <nd ref="1603680169"/>
+    <nd ref="1603680172"/>
+    <nd ref="1603680181"/>
+    <nd ref="1603680185"/>
+    <nd ref="1603680189"/>
+    <nd ref="1603680197"/>
+    <nd ref="1603680198"/>
+    <nd ref="1603680190"/>
+    <nd ref="1603680187"/>
+    <nd ref="1603680184"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="147156710" version="6" timestamp="2017-09-08T07:39:35Z" changeset="51834683" uid="364" user="Edward">
+    <nd ref="3085495700"/>
+    <nd ref="1603680030"/>
+    <nd ref="1603680042"/>
+    <nd ref="1603680045"/>
+    <nd ref="1603680049"/>
+    <nd ref="1603680079"/>
+    <nd ref="1603680069"/>
+    <nd ref="1603680077"/>
+    <nd ref="1603680065"/>
+    <nd ref="3085495703"/>
+    <nd ref="3085495700"/>
+    <tag k="addr:city" v="Amherst"/>
+    <tag k="addr:housenumber" v="110"/>
+    <tag k="addr:postcode" v="01003"/>
+    <tag k="addr:state" v="MA"/>
+    <tag k="addr:street" v="Grinnell Way"/>
+    <tag k="building" v="yes"/>
+    <tag k="building:levels" v="2"/>
+    <tag k="name" v="George N. Parks Minuteman Marching Band Building"/>
+    <tag k="wikidata" v="Q5542765"/>
+  </way>
+  <way id="147156724" version="2" timestamp="2013-05-09T08:34:36Z" changeset="16043494" uid="23351" user="JasonWoof">
+    <nd ref="1603680171"/>
+    <nd ref="1603680160"/>
+    <nd ref="1603680156"/>
+    <nd ref="1603680158"/>
+    <nd ref="1603680171"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="147156728" version="3" timestamp="2014-09-19T02:02:38Z" changeset="25532460" uid="2345544" user="sulsull">
+    <nd ref="1603680134"/>
+    <nd ref="1603680109"/>
+    <nd ref="1603680126"/>
+    <nd ref="1603680148"/>
+    <nd ref="1603680134"/>
+    <tag k="building" v="yes"/>
+    <tag k="name" v="Steam and Condensate Building"/>
+  </way>
+  <way id="147156729" version="5" timestamp="2016-09-28T21:50:03Z" changeset="42505935" uid="491702" user="askewchan">
+    <nd ref="1603680132"/>
+    <nd ref="1603680062"/>
+    <nd ref="1603680075"/>
+    <nd ref="3085515643"/>
+    <nd ref="3085515646"/>
+    <nd ref="3085515644"/>
+    <nd ref="3085515645"/>
+    <nd ref="3085515641"/>
+    <nd ref="3085515640"/>
+    <nd ref="3085515639"/>
+    <nd ref="3085515642"/>
+    <nd ref="1603680136"/>
+    <nd ref="1603680132"/>
+    <tag k="addr:city" v="Amherst"/>
+    <tag k="addr:housenumber" v="200"/>
+    <tag k="addr:postcode" v="01003"/>
+    <tag k="addr:state" v="MA"/>
+    <tag k="addr:street" v="Hicks Way"/>
+    <tag k="building" v="yes"/>
+    <tag k="ele" v="70"/>
+    <tag k="gnis:county_name" v="Hampshire"/>
+    <tag k="gnis:feature_id" v="1977775"/>
+    <tag k="gnis:import_uuid" v="57871b70-0100-4405-bb30-88b2e001a944"/>
+    <tag k="gnis:reviewed" v="no"/>
+    <tag k="name" v="Thompson Hall"/>
+    <tag k="source" v="USGS Geonames"/>
+  </way>
+  <way id="147156739" version="3" timestamp="2014-09-19T02:02:38Z" changeset="25532460" uid="2345544" user="sulsull">
+    <nd ref="1603680151"/>
+    <nd ref="1603680139"/>
+    <nd ref="1603680152"/>
+    <nd ref="1603680156"/>
+    <nd ref="1603680158"/>
+    <nd ref="1603680151"/>
+    <tag k="building" v="yes"/>
+    <tag k="name" v="Photo Laboratory/UMOC"/>
+  </way>
+  <way id="217245360" version="1" timestamp="2013-04-13T02:32:02Z" changeset="15707935" uid="1137433" user="jremillard-massgis">
+    <nd ref="2265334672"/>
+    <nd ref="2265334673"/>
+    <nd ref="2265334671"/>
+    <nd ref="2265334670"/>
+    <nd ref="2265334672"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="217245362" version="3" timestamp="2016-09-28T21:49:43Z" changeset="42505935" uid="491702" user="askewchan">
+    <nd ref="2265334692"/>
+    <nd ref="2265334691"/>
+    <nd ref="2265334699"/>
+    <nd ref="2265334696"/>
+    <nd ref="2265334695"/>
+    <nd ref="2265334698"/>
+    <nd ref="2265334694"/>
+    <nd ref="2265334687"/>
+    <nd ref="2265334686"/>
+    <nd ref="2265334689"/>
+    <nd ref="2265334688"/>
+    <nd ref="2265334690"/>
+    <nd ref="2265334693"/>
+    <nd ref="2265334697"/>
+    <nd ref="2265334692"/>
+    <tag k="addr:city" v="Amherst"/>
+    <tag k="addr:housenumber" v="113"/>
+    <tag k="addr:postcode" v="01003"/>
+    <tag k="addr:state" v="MA"/>
+    <tag k="addr:street" v="Grinnell Way"/>
+    <tag k="building" v="yes"/>
+    <tag k="ele" v="66"/>
+    <tag k="gnis:county_name" v="Hampshire"/>
+    <tag k="gnis:feature_id" v="1977369"/>
+    <tag k="gnis:import_uuid" v="57871b70-0100-4405-bb30-88b2e001a944"/>
+    <tag k="gnis:reviewed" v="no"/>
+    <tag k="name" v="Blaisdell"/>
+    <tag k="source" v="USGS Geonames"/>
+  </way>
+  <way id="483764744" version="2" timestamp="2018-08-22T23:30:08Z" changeset="61904718" uid="4910322" user="Hamhock666">
+    <nd ref="4765068358"/>
+    <nd ref="5850031827"/>
+    <nd ref="5850031828"/>
+    <nd ref="5850031829"/>
+    <nd ref="4765068359"/>
+    <nd ref="4765068360"/>
+    <nd ref="4765068361"/>
+    <nd ref="4765068362"/>
+    <nd ref="4765068363"/>
+    <nd ref="4765068364"/>
+    <nd ref="4765068365"/>
+    <nd ref="4765068366"/>
+    <nd ref="4765068358"/>
+    <tag k="access:conditional" v="private @ (Mo-Fr 09:00-17:00)"/>
+    <tag k="amenity" v="parking"/>
+    <tag k="name" v="Lot 30 Red Permit"/>
+    <tag k="parking" v="surface"/>
+  </way>
+  <way id="619005070" version="1" timestamp="2018-08-22T23:29:59Z" changeset="61904718" uid="4910322" user="Hamhock666">
+    <nd ref="5850031870"/>
+    <nd ref="5850031871"/>
+    <nd ref="5850031872"/>
+    <nd ref="5850031873"/>
+    <nd ref="5850031870"/>
+    <tag k="access:conditional" v="private @ (Mo-Fr 09:00-17:00)"/>
+    <tag k="amenity" v="parking"/>
+    <tag k="name" v="Lot 64 Red Permit"/>
+    <tag k="parking" v="surface"/>
+  </way>
+
+</osm>
