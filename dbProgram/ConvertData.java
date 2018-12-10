@@ -128,6 +128,7 @@ public class ConvertData{
 		node.add(Double.parseDouble(element.getAttribute("lon")));
 		node.add(holder.getDouble("elevation"));
 		output.add(node);
+		System.out.println(node);
 	    }
 	    return output;
 	}
