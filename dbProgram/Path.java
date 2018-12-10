@@ -115,7 +115,7 @@ public class Path{
 	String endNode = getClosestPathNode(lat1,lon1);
 	NodeComparable nc = new NodeComparable();
 	nc.setTarget(endNode);
-	PriorityQueye<ArrayList> pq = new PriorityQueue<ArrayList>(10, nc);
+	PriorityQueue<ArrayList> pq = new PriorityQueue<ArrayList>(10, nc);
 	ArrayList neighbors = nearestNeighbors(startingNode);
 	q.transaction_search_node(startingNode);
 	double sLat = q.getLatitude();
@@ -125,7 +125,7 @@ public class Path{
 	    String node = (String)(neighbors.get(i));
 	    q.transaction_search_node(node);
 	    double nLat = q.getLatitude();
-	    double nLon = q.getLongitude;
+	    double nLon = q.getLongitude();
 	    temp.add(distance(sLat,sLon, nLat,nLon));
 	    temp.add(distance(sLat,sLon, nLat,nLon));
 	    temp.add(startingNode);
@@ -135,7 +135,7 @@ public class Path{
 	while ( (!((String)(path.get(path.size()-1))) .equals(endNode)) && pq.size() > 0){
 	    path = (ArrayList)(pq.peek());
 	    pq.remove(path);
-	    String node = path.get(path.size() - 1);
+	    String node = (String)(path.get(path.size() - 1));
 	    q.search_transaction_node(node);
 	    double nEle = q.getElevation();
 	    double nLat = q.getLatitude();
