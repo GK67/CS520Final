@@ -144,7 +144,7 @@ public class Path{
 	    NodeComparable nc = new NodeComparable();
 	    nc.setTarget(endNode);
 	    PriorityQueue<ArrayList> pq = new PriorityQueue<ArrayList>(10, nc);
-	    ArrayList neighbors = nearestNeighbors(startingNode);
+	    /* ArrayList neighbors = nearestNeighbors(startingNode);
 	    System.out.println("Found Neighbors");
 	    q.transaction_search_node(startingNode);
 	    Double sLat = q.getLatitude();
@@ -162,7 +162,12 @@ public class Path{
 		    temp.add(node);
 		    pq.add(temp);
 		}
-	    }
+	    }*/
+	    ArrayList temp = new ArrayList();
+	    temp.add(0);
+	    temp.add(0);
+	    temp.add(startingNode);
+	    pq.add(temp);
 	    System.out.println("Priority Queue initialized");
 	    ArrayList path = (ArrayList)(pq.peek());
 	    for (int i = 0; i < path.size(); i++){
