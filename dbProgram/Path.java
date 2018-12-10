@@ -194,8 +194,8 @@ public class Path{
 		}
 	    }*/
 	    ArrayList temp = new ArrayList();
-	    temp.add(0);
-	    temp.add(0);
+	    temp.add(0.0);
+	    temp.add(0.0);
 	    temp.add(startingNode);
 	    pq.add(temp);
 	    System.out.println("Priority Queue initialized");
@@ -222,11 +222,15 @@ public class Path{
 		    if (! path.contains(neighbor)){
 			System.out.println("test");
 			Double dist = (Double)(path.get(0));
+			System.out.println("line1");
 			Double ele = 1.0;
+			System.out.println("line2");
 			q.transaction_search_node(neighbor);
-			
+			System.out.println("line3");
 			Double neighborEle = q.getElevation();
+			System.out.println("line4");
 			Double neighborLat = q.getLatitude();
+			System.out.println("line5");
 			Double neighborLon = q.getLongitude();
 			System.out.println("Data found on :" + neighbor);
 			if (nEle != null && nLat != null && nLon != null && neighborEle != null && neighborLat != null && neighborLon != null){
