@@ -164,37 +164,39 @@ public class Path{
 	    }
 	    System.out.println("Priority Queue initialized");
 	    ArrayList path = (ArrayList)(pq.peek());
-	    while ( (!((String)(path.get(path.size()-1))) .equals(endNode)) && pq.size() > 0){
+	    while (pq.size() > 0 && !(((String) (path.get(path.size()-1))) .equals(endNode))   ){
 		path = (ArrayList)(pq.peek());
 		pq.remove(path);
 		String node = (String)(path.get(path.size() - 1));
 		q.transaction_search_node(node);
-		double nEle = q.getElevation();
-		double nLat = q.getLatitude();
-		double nLon = q.getLongitude();
+		Double nEle = q.getElevation();
+		Double nLat = q.getLatitude();
+		Double nLon = q.getLongitude();
 		neighbors = nearestNeighbors(node);
 		for (int i = 0; i < neighbors.size(); i++){
+		    System.out.println("Finding Neighbors");
 		    String neighbor = (String) (neighbors.get(i));
-		    if (!path.contains(neighbor)){
+		    if (! path.contains(neighbor)){
 			double dist = (double)(path.get(0));
 			double ele = 1.0;
 			q.transaction_search_node(neighbor);
-			double neighborEle = q.getElevation();
-			double neighborLat = q.getLatitude();
-			double neighborLon = q.getLongitude();
-			
-			if (neighborEle > nEle){
-			    ele = 1.3;
+			Double neighborEle = q.getElevation();
+			Double neighborLat = q.getLatitude();
+			Double neighborLon = q.getLongitude();
+			if (nEle != null && nLat != null && nLon != null && neighborEle != null && neighborLat != null && neighborLong != null){
+			    if (neighborEle > nEle){
+				ele = 1.3;
+			    }
+			    else if (neighborEle < nEle){
+				ele = 0.9;
+			    }
+			    ele = Math.pow(ele, Math.abs(neighborEle - nEle));
+			    dist += distance( neighborLat,neighborLon,nLat, nLon);
+			    path.set(0, dist*ele);
+			    path.set(1, dist);
+			    path.add(neighbor);
+			    pq.add(path);
 			}
-			else if (neighborEle < nEle){
-			    ele = 0.9;
-			}
-			ele = Math.pow(ele, Math.abs(neighborEle - nEle));
-			dist += distance( neighborLat,neighborLon,nLat, nLon);
-			path.set(0, dist*ele);
-			path.set(1, dist);
-			path.add(neighbor);
-			pq.add(path);
 		    }
 		}
 	    }
