@@ -69,6 +69,7 @@ public class Path{
 			closest = (String)(nodesInWays.get(i));
 		    }
 		}
+		System.out.println(i);
 	    }
 	    return closest;
 	}
