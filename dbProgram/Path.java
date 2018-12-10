@@ -30,7 +30,7 @@ public class Path{
     }
 
     public void close(){
-	q.close();
+	q.closeConnection();
     }
     
     public double distance(double xlat, double xlon, double ylat, double ylon){
