@@ -250,6 +250,9 @@ public class Path{
 			    newPath.add(neighbor);
 			    System.out.println(neighbor + " added to path");
 			    pq.add(newPath);
+			    if (neighbor.equals(endNode)){
+				return newPath;
+			    }
 			}
 		    }
 		}
