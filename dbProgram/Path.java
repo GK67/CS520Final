@@ -51,6 +51,7 @@ public class Path{
     public String getClosestPathNode(double lat, double lon){
 	try{
 	    ArrayList nodesInWays = q.transaction_search_all_node();
+	    System.out.println(closest);
 	    String closest = (String)(nodesInWays.get(0));
 	    q.transaction_search_node(closest);
 	    double newLat = q.getLatitude();
