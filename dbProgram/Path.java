@@ -50,11 +50,11 @@ public class Path{
 	return Math.sqrt(Math.pow(xlat-ylat, 2) + Math.pow(xlon-ylon, 2));
     }
 
-    public String getClosestPathNode(double lat, double lon){
+    public ArrayList getClosestPathNode(double lat, double lon){
 	try{
 	    ArrayList nodesInWays = q.transaction_search_all_node();
 	    String closest = (String)(nodesInWays.get(0));
-
+	    closest = closest.replaceAll("\\s+","");
 	    q.transaction_search_node(closest);
 	    Double newLat = q.getLatitude();
 	    Double newLon = q.getLongitude();
@@ -67,11 +67,16 @@ public class Path{
 		    Double dist = distance(lat, lon,newLat,newLon);
 		    if (least > dist){
 			least = dist;
-			closest = (String)(nodesInWays.get(i));
+			closest = ((String)(nodesInWays.get(i))).replaceAll("\\s+","");;
 		    }
 		}
 	    }
-	    return closest;
+	    ArrayList ways = q.transaction_search_way(closest);
+	    String way = ((String)(ways.get(0))).replaceAll("\\s+","");
+	    ArrayList tuple = new ArrayList();
+	    tuple.add(closest);
+	    tuple.add(way);
+	    return tuple;
 	}
 	catch(Exception ex){
 	    System.out.println("error");
@@ -186,10 +191,10 @@ public class Path{
     public ArrayList getPath(double lat0, double lon0, double lat1, double lon1){
 	try{
 	    hasWalked = new ArrayList();
-	    String startingNode = getClosestPathNode(lat0, lon0);
-	    startingNode = startingNode.replaceAll("\\s+","");
-	    String endNode = getClosestPathNode(lat1,lon1);
-	    endNode = endNode.replaceAll("\\s+","");
+	    ArrayList startingT = getClosestPathNode(lat0, lon0);
+	    String startingNode = ((String)(startingT.get(0))).replaceAll("\\s+","");
+	    ArrayList endT = getClosestPathNode(lat1,lon1);
+	    String endNode = ((String)(endT.get(0))).replaceAll("\\s+","");
 	    NodeComparable nc = new NodeComparable();
 	    nc.setTarget(endNode);
 	    PriorityQueue<ArrayList> pq = new PriorityQueue<ArrayList>(10, nc);
@@ -215,7 +220,10 @@ public class Path{
 	    ArrayList temp = new ArrayList();
 	    temp.add(0.0);
 	    temp.add(0.0);
-	    temp.add(startingNode);
+	    ArrayList startTuple = new ArrayList();
+	    startTuple.add(startingNode);
+	    startTuple.add((String) (startingT.get(1)));
+	    temp.add(startingTuple);
 	    pq.add(temp);
 	    System.out.println("Priority Queue initialized");
 	    ArrayList path = (ArrayList)(pq.peek());
