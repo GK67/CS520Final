@@ -84,6 +84,7 @@ public class Path{
 	    System.out.println(ways);
 	    for (int i = 0; i < ways.size(); i ++){
 		String way = (String)(ways.get(i));
+		System.out.println("Curr way: " +way);
 		way = way.replaceAll("\\s+","");
 		ArrayList nodes = q.transaction_search_nodes_of_way(way);
 		for (int j = 0; j < nodes.size(); j++){
