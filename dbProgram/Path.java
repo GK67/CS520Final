@@ -38,20 +38,20 @@ public class Path{
     }
 
     public String getClosestPathNode(double lat, double lon){
-        ArrayList nodesInWays = q.transaction_search_all_nodes();
-	String closest = nodesInWays.get(0);
-	q.transaction_search_node(nodesInWays.get(0));
+        ArrayList nodesInWays = q.transaction_search_all_node();
+	String closest = (String)(nodesInWays.get(0));
+	q.transaction_search_node(closest);
 	double newLat = q.getLatitude();
 	double newLon = q.getLongitude();
 	double least = distance(lat, lon, newLat, newLon);
 	for (int i = 1; i < nodesInWays.size(); i++){
-	    q.transaction_search_node(nodesInWays.get(i));
+	    q.transaction_search_node((String)(nodesInWays.get(i)));
 	    newLat = q.getLatitude();
 	    newLon = q.getLongitude();
 	    double dist = distance(lat, lon,newLat,newLon);
 	    if (least > dist){
 		least = dist;
-		closest = nodesInWays(i);
+		closest = (String)(nodesInWays.get(i));
 	    }
 	}
 	return closest;
