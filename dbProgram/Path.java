@@ -81,6 +81,9 @@ public class Path{
 	    ArrayList output = new ArrayList();
 	    ArrayList ways = q.transaction_search_way(curr);
 	    for (int i = 0; i < ways.size(); i++){
+		System.out.println(ways.get(i));
+	    }
+	    for (int i = 0; i < ways.size(); i++){
 		ArrayList nodes = q.transaction_search_nodes_of_way((String)(ways.get(i)));
 		String first = null;
 		String second = null;
