@@ -30,7 +30,7 @@ public class ConvertData{
 	String line = null;
 	try {
 	    while ((line = reader.readLine()) != null) {
-		system.out.println(line);
+		System.out.println(line);
 		sb.append(line + "\n");
 	    }
 	} catch (IOException e) {
