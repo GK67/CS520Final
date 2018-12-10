@@ -223,7 +223,7 @@ public class Path{
 	    ArrayList startTuple = new ArrayList();
 	    startTuple.add(startingNode);
 	    startTuple.add((String) (startingT.get(1)));
-	    temp.add(startingTuple);
+	    temp.add(startTuple);
 	    pq.add(temp);
 	    System.out.println("Priority Queue initialized");
 	    ArrayList path = (ArrayList)(pq.peek());
