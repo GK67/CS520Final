@@ -117,6 +117,7 @@ public class ConvertData{
 	try{
 	    Document doc = getMapData(filename);
 	    NodeList nodes = doc.getElementsByTagName("node");
+	    System.out.println(nodes.getLength());
 	    JSONObject elevation = getElevation(nodes);
 	    ArrayList output = new ArrayList();
 	    for (int i = 0; i < nodes.getLength(); i++){
