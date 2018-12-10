@@ -222,7 +222,7 @@ public class Path{
 		    PriorityQueue newPath = new PriorityQueue(path);
 		    String neighbor = (String) (neighbors.get(i));
 		    neighbor = neighbor.replaceAll("\\s+","");
-		    if (! path.contains(neighbor)){
+		    if (! newPath.contains(neighbor)){
 			System.out.println("test");
 			Double dist = (Double)(path.get(0));
 			System.out.println("line1");
