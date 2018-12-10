@@ -219,7 +219,7 @@ public class Path{
 		ArrayList neighbors = allNeighbors(node);
 		System.out.println(neighbors);
 		for (int i = 0; i < neighbors.size(); i++){
-		    PriorityQueue<ArrayList> newPath = new PriorityQueue<ArrayList>(path);
+		    ArrayList newPath = new ArrayList(path);
 		    String neighbor = (String) (neighbors.get(i));
 		    neighbor = neighbor.replaceAll("\\s+","");
 		    if (! newPath.contains(neighbor)){
