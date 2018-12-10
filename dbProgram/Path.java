@@ -80,11 +80,15 @@ public class Path{
 	try{
 	    ArrayList output = new ArrayList();
 	    ArrayList ways = q.transaction_search_way(curr);
+
 	    System.out.println(ways.size());
 	    for (int i = 0; i < ways.size(); i ++){
-		ArrayList nodes = q.transaction_search_nodes_of_way((String)(ways.get(i)));
+		String way = (String)(ways.get(i));
+		way = way.replaceAll("\\s+","");
+		ArrayList nodes = q.transaction_search_nodes_of_way(way);
 		for (int j = 0; j < nodes.size(); j++){
 		    String node = (String) (nodes.get(j));
+		    node = node.replaceAll("\\s+","");
 		    output.add(node);
 		}
 	    }
@@ -210,7 +214,7 @@ public class Path{
 		Double nLat = q.getLatitude();
 		Double nLon = q.getLongitude();
 		System.out.println("Attempt to start neighbor search");
-		ArrayList neighbors = nearestNeighbors(node);
+		ArrayList neighbors = allNeighbors(node);
 		System.out.println(neighbors);
 		for (int i = 0; i < neighbors.size(); i++){
 		    String neighbor = (String) (neighbors.get(i));
