@@ -216,7 +216,7 @@ public class Path{
 		Double nLat = q.getLatitude();
 		Double nLon = q.getLongitude();
 		System.out.println("Attempt to start neighbor search");
-		ArrayList neighbors = allNeighbors(node);
+		ArrayList neighbors = nearestNeighbors(node);
 		System.out.println(neighbors);
 		for (int i = 0; i < neighbors.size(); i++){
 		    ArrayList newPath = new ArrayList(path);
