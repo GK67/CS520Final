@@ -91,7 +91,7 @@ public class Path{
 		if (!(node.equals(curr))){
 		    q.transaction_search_node(node);
 		    double nLat = q.getLatitude();
-		    double nLon = q.getLongitude;
+		    double nLon = q.getLongitude();
 		    q.transaction_search_node(curr);
 		    double cLat = q.getLatitude();
 		    double cLon = q.getLongitude();
@@ -136,18 +136,18 @@ public class Path{
 	    path = (ArrayList)(pq.peek());
 	    pq.remove(path);
 	    String node = (String)(path.get(path.size() - 1));
-	    q.search_transaction_node(node);
+	    q.transaction_search_node(node);
 	    double nEle = q.getElevation();
 	    double nLat = q.getLatitude();
 	    double nLon = q.getLongitude();
-	    ArrayList neighbors = nearestNeighbors(node);
+	    neighbors = nearestNeighbors(node);
 	    for (int i = 0; i < neighbors.size(); i++){
 		String neighbor = (String) (neighbors.get(i));
 		if (!path.contains(neighbor)){
-		    double dist = path.get(0);
+		    double dist = (double)(path.get(0));
 		    double ele = 1.0;
-		    q.search_transaction_node(neighbor);
-		    double neigbhorEle = q.getElevation();
+		    q.transaction_search_node(neighbor);
+		    double neighborEle = q.getElevation();
 		    double neighborLat = q.getLatitude();
 		    double neighborLon = q.getLongitude();
 
