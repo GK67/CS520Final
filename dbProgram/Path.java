@@ -205,7 +205,7 @@ public class Path{
 		ArrayList neighbors = nearestNeighbors(node);
 		for (int i = 0; i < neighbors.size(); i++){
 		    String neighbor = (String) (neighbors.get(i));
-		    System.out.println(neighbor);
+		    System.out.println("1"+neighbor);
 		    if (! path.contains(neighbor)){
 			double dist = (double)(path.get(0));
 			double ele = 1.0;
