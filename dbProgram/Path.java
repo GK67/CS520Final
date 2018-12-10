@@ -204,8 +204,8 @@ public class Path{
 		System.out.println("Attempt to start neighbor search");
 		ArrayList neighbors = allNeighbors(node);
 		for (int i = 0; i < neighbors.size(); i++){
-		    System.out.println("Finding Neighbors");
 		    String neighbor = (String) (neighbors.get(i));
+		    System.out.println(neighbor);
 		    if (! path.contains(neighbor)){
 			double dist = (double)(path.get(0));
 			double ele = 1.0;
