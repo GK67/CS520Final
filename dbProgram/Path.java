@@ -102,14 +102,14 @@ public class Path{
 	    System.out.println(ways.size());
 	    for (int i = 0; i < ways.size(); i++){
 		String way = (String)(ways.get(i));
-		way.replaceAll("\\s+","");
+		way = way.replaceAll("\\s+","");
 		ArrayList nodes = q.transaction_search_nodes_of_way((String)(ways.get(i)));
 		String first = null;
 		String second = null;
 		int n = 0;
 		while( (first == null || second == null) && n < nodes.size()){
 		    String node = (String)(nodes.get(n));
-		    node.replaceAll("\\s+","");
+		    node = node.replaceAll("\\s+","");
 		    if (first == null){
 			if (! (node.equals(curr))){
 			    first = node;
@@ -134,7 +134,7 @@ public class Path{
 		double sLon = q.getLongitude();
 		for (int j = 0; j < nodes.size(); j++){
 		    String node = ((String)nodes.get(j));
-		    node.replaceAll("\\s+","");
+		    node = node.replaceAll("\\s+","");
 		    if (!(node.equals(curr))){
 			System.out.println("Current neighbor " +node);
 			q.transaction_search_node(node);
@@ -216,7 +216,7 @@ public class Path{
 		System.out.println(neighbors.length());
 		for (int i = 0; i < neighbors.size(); i++){
 		    String neighbor = (String) (neighbors.get(i));
-		    neighbor.replaceAll("\\s+","")
+		    neighbor = neighbor.replaceAll("\\s+","")
 		    if (! path.contains(neighbor)){
 			double dist = (double)(path.get(0));
 			double ele = 1.0;
