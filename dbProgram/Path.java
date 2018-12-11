@@ -326,10 +326,8 @@ public class Path{
 		String line;
 		String blank;
 		if (((String)(curr.get(1))).equals(((String)(prev.get(1))))){
-		    if (street == null){
-			blank = "the road.";
-		    }
-		    else{
+		    blank = "the road.";
+		    if (street != null && street != ""){
 			street = street.trim();
 			blank = street;
 		    }
@@ -337,10 +335,8 @@ public class Path{
 		
 		}
 		else{
-		    if (street == null){
-			blank = "the path";
-		    }
-		    else{
+		    blank = "the path";
+		    if (street != null && != ""){
 			street = street.trim();
 			blank = street;
 		    }
