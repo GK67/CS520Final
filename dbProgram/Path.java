@@ -355,7 +355,7 @@ public class Path{
 		output+="You have arrived at your destination\n";
 	    }
 	    output+="Total distance traveled: " + dist + " meters.\n";
-	    output+="Total elevation change: " + ((Double)Path.get(2)) + " meters.\n";
+	    output+="Total elevation change: " + ((Double)path.get(2)) + " meters.\n";
 	    return output;
 	}
 	catch(Exception ex){
