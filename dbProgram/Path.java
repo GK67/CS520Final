@@ -288,8 +288,8 @@ public class Path{
 	}
 	String output = "";
 	ArrayList prev = (ArrayList)(path.get(2));
-	String node = (String)(tuple.get(0));
-	String way = (String)(tuple.get(1));
+	String node = (String)(prev.get(0));
+	String way = (String)(prev.get(1));
 	String street = q.transaction_search_streetName(way);
 	String building = q.transaction_search_buildingName(way);
 	ArrayList curr;
