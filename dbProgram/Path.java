@@ -291,7 +291,7 @@ public class Path{
 	String node = (String)(prev.get(0));
 	String way = (String)(prev.get(1));
 	String street = q.transaction_search_streetName(way);
-	String building = q.transaction_search_buildingName(way);
+	String building = q.transaction_search_buildingName_by_way(way);
 	ArrayList curr;
 	Double dist = 0.0;
 	if (building != null){
@@ -347,7 +347,7 @@ public class Path{
 	    }
 	    output+=line;
 	}
-	building = q.transaction_search_building(way);
+	building = q.transaction_search_building_by_way(way);
 	if (building != null){
 	    building = building.trim();
 	    output+="You have arrived at " + building+"\n";
