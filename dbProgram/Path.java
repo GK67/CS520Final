@@ -336,7 +336,7 @@ public class Path{
 		}
 		else{
 		    blank = "the path";
-		    if (street != null && != ""){
+		    if (street != null && street!= ""){
 			street = street.trim();
 			blank = street;
 		    }
