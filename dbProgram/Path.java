@@ -201,6 +201,7 @@ public class Path{
 	    ArrayList temp = new ArrayList();
 	    temp.add(0.0);
 	    temp.add(0.0);
+	    temp.add(0.0);
 	    ArrayList startTuple = new ArrayList();
 	    startTuple.add(startingNode);
 	    startTuple.add((String) (startingT.get(1)));
@@ -261,6 +262,7 @@ public class Path{
 			    dist += distance( neighborLat,neighborLon,nLat, nLon);
 			    newPath.set(0, dist*ele);
 			    newPath.set(1, dist);
+			    newPath.set(2, ((Double)newPath.get(2)) + Math.abs(neighborEle-nEle));
 			    newPath.add(tuple);
 			    System.out.println(neighbor + " added to path");
 			    pq.add(newPath);
@@ -288,7 +290,7 @@ public class Path{
 		return "No path found";
 	    }
 	    String output = "";
-	    ArrayList prev = (ArrayList)(path.get(2));
+	    ArrayList prev = (ArrayList)(path.get(3));
 	    String node = (String)(prev.get(0));
 	    String way = (String)(prev.get(1));
 	    String street = q.transaction_search_streetName(way);
@@ -302,7 +304,7 @@ public class Path{
 	    else{
 		output += "Starting from your location\n";
 	    }
-	    for (int i = 3; i < path.size(); i++){
+	    for (int i = 4; i < path.size(); i++){
 		curr = (ArrayList)(path.get(i));
 		node = (String)(curr.get(0));
 		way = (String)(curr.get(1));
@@ -353,6 +355,7 @@ public class Path{
 		output+="You have arrived at your destination\n";
 	    }
 	    output+="Total distance traveled: " + dist + " meters.\n";
+	    output+="Total elevation change: " + ((Double)Path.get(2)) + " meters.\n";
 	    return output;
 	}
 	catch(Exception ex){
