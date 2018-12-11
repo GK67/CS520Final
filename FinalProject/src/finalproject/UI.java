@@ -27,7 +27,7 @@ public class UI extends javax.swing.JFrame {
         
         String start_location_dropDown [] = new String[]{"ILC","libary","diins","slee","ss","dd","ssk"};
         String end_location_dropDown [] = new String[]{"ILC5","libary4","diins3","slee2","ss1","dd0","ssk"};
-        String method_location_dropDown [] = new String[]{"the most ","the least","diins"};
+        String method_location_dropDown [] = new String[]{"The Most Efficient","The Least Elevation","The Least Distance"};
           StartComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(start_location_dropDown));
             EndComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(end_location_dropDown));
               MethodComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(method_location_dropDown));
@@ -333,7 +333,15 @@ public class UI extends javax.swing.JFrame {
          method = MethodComboBox.getSelectedItem().toString();
    
          EndLocation = EndComboBox.getSelectedItem().toString();
+        if("The Most Efficient".equals(method)){
         
+        }
+        if("The Least Elevation".equals(method)){
+        
+        }
+        if("The Least Distance".equals(method)){
+        
+        }
         PathTextArea.setText("Your startX is " + Start_x +"Your startY is " + Start_y+ "Your method is "+ method+ "Your start location is "+ StartLocation+"Your end location is "
                 + EndLocation);
         
