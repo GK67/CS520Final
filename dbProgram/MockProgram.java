@@ -3,16 +3,25 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.util.*;
 
-public class MockProgram {
+public class MockProgram extends UI{
 
     public static void main(String[] args) throws Exception {
         if (args.length < 2) {
             System.out.println("Usage: java VideoStore CUSTOMER_ID CUSTOMER_PASSWORD");
             System.exit(1);
         }
+        UI ui = new UI();
+        ui.setVisible(true);
+        Path path = new Path();
+        ArrayList building= path.giveAllBuildings();
+        String[] buildings = new String[building.size()];
+        buildings= ((ArrayList<String>)building).toArray(buildings);
+        
 
+        ui.setStartDropDown(buildings);
+        ui.setEndDropDown(buildings);
         //create mock data
-        ArrayList output=ConvertData.nodesToArray("./northeast");/*
+       /* ArrayList output=ConvertData.nodesToArray("./northeast");/*
         int i=10;
         String id="42949710";
         Double la=42.3787077;
@@ -69,7 +78,7 @@ public class MockProgram {
 
         //only insert the data in the begining, each time running, it will delete the original tables
         //and create new one
-        q.transaction_insert_data(output, outputWayList);  
+       // q.transaction_insert_data(output, outputWayList);  
         System.out.println("Finish insert data");
 
         //search a node, before get value need do this search first
@@ -118,7 +127,9 @@ public class MockProgram {
         }
 
         System.out.println("Start here......................................................");
-        Path p = new Path();/*
+        Path p = new Path();
+        System.out.println(p.giveDirections("Knowlton Hall", "Johnson Hall", 2));
+        /*
         ArrayList neighbors = p.nearestNeighbors("66591571");
         for (int i = 0; i < neighbors.size(); i++){
             System.out.println(neighbors.get(i));
