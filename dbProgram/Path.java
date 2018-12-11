@@ -252,10 +252,10 @@ public class Path{
 				}
 			    }
 			    else if (choice == 1){
-				ele = 2;
+				ele = 2.0;
 			    }
 			    else{
-				ele = 1;
+				ele = 1.0;
 			    }
 			    ele = Math.pow(ele, Math.abs(neighborEle - nEle));
 			    dist += distance( neighborLat,neighborLon,nLat, nLon);
@@ -282,29 +282,30 @@ public class Path{
 	return null;
     }
 
-    public ArrayList toEnglish(ArrayList path){
+    public String toEnglish(ArrayList path){
 	if (path == null){
-	    return null;
+	    return "No path found";
 	}
-	ArrayList output = new ArrayList();
+	String output = "";
 	ArrayList prev = (ArrayList)(path.get(2));
 	String node = (String)(tuple.get(0));
 	String way = (String)(tuple.get(1));
 	String street = q.transaction_search_streetName(way);
 	String building = q.transaction_search_buildingName(way);
 	ArrayList curr;
+	Double dist = 0.0;
 	if (building != null){
 	    building = building.trim();
-	    output.add("Starting from " + building);
+	    output += "Starting from " + building +"\n";
 	}
 	else{
-	    output.add("Starting from your location");
+	    output += "Starting from your location\n";
 	}
 	for (int i = 3; i < path.size(); i++){
 	    curr = (ArrayList)(path.get(i));
 	    node = (String)(curr.get(0));
 	    way = (String)(curr.get(1));
-	    street = q.transaction_search_streetName(way)
+	    street = q.transaction_search_streetName(way);
 	    String pNode = (String)(prev.get(0));
 	    String pWay = (String)(prev.get(1));
 	    q.transaction_search_node(node);
@@ -320,6 +321,7 @@ public class Path{
 	    Double a = Math.sin(differenceLat/2) * Math.sin(differenceLat/2) + Math.cos(cRad)* Math.cos(pRad) *Math.sin(differenceLon/2) * Math.sin(differenceLon/2);
 	    Double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 	    Double d = 6371000 * c;
+	    dist+= d;
 	    String line;
 	    String blank;
 	    if (((String)(curr.get(1))).equals(((String)(prev.get(1))))){
@@ -330,29 +332,67 @@ public class Path{
 		    street = street.trim();
 		    blank = street;
 		}
-		String line = "Walk " + d + " meters on " + blank;
+		line = "Walk " + d + " meters on " + blank+"\n";
 		
 	    }
 	    else{
 		if (street == null){
-		    blank == "the path";
+		    blank = "the path";
 		}
 		else{
 		    street = street.trim();
 		    blank = street;
 		}
-		String line = "Turn onto " + blank + " and walk " + d + " meters";
+		line = "Turn onto " + blank + " and walk " + d + " meters\n";
 	    }
-	    output.add(line);
+	    output+=line;
 	}
 	building = q.transaction_search_buildingName(way);
 	if (building != null){
 	    building = building.trim();
-	    output.add("You have arrived at " + building);
+	    output+="You have arrived at " + building+"\n";
 	}
 	else{
-	    output.add("You have arrived at your destination");
+	    output+="You have arrived at your destination\n";
 	}
+	output+="Total distance traveled: " + dist + " meters.\n";
 	return output;
+    }
+
+    public String giveDirections(String building1, String building2, int choice){
+	String startWay= q.transaction_search_way_by_buildingName(building1).trim();
+	String endWay = q.transaction_search_way_by_buildingName(building2).trim();
+	ArrayList startNodes = q.transaction_search_nodes_of_way(startWay);
+	ArrayList endNodes = q.transaction_search_nodes_of_way(endWay);
+	String start = ((String)(startNodes.get(startNodes.size()/2))).trim();
+	String end = ((String) (endNodes.get(endNodes.size()/2))).trim();
+	q.transaction_search_node(start);
+	Double xLat = q.getLatitude();
+	Double xLon = q.getLongitude();
+	q.transaction_search_node(end);
+	Double yLat = q.getLatitude();
+	Double yLon = q.getLongitude();
+	ArrayList path = getPath(xLat,xLon, yLat, yLon, choice);
+	return toEnglish(path);
+    }
+
+    public ArrayList giveAllBuildings(){
+	ArrayList buildings = q.transaction_search_all_building();
+	ArrayList fixedBuildings = new ArrayList();
+	for (int i = 0; i < buildings.size(); i++){
+	    fixedBuildings.add(((String)(buildings.get(i))).trim());
+	}
+	return fixedBuildings;
+    }
+
+    public String giveDirectionsCoords(Double lat, Double lon, String building2, int choice){
+	String endWay = q.transaction_search_way_by_buildingName(building2).trim();
+	ArrayList endNodes = q.transaction_search_nodes_of_way(endWay);
+	String end = ((String) (endNodes.get(endNodes.size()/2))).trim();
+	q.transaction_search_node(end);
+	Double yLat = q.getLatitude();
+	Double yLon = q.getLongitude();
+	ArrayList path = getPath(lat, lon, yLat, yLon, choice);
+	return toEnglish(path);
     }
 }
