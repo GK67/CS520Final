@@ -369,6 +369,18 @@ public class UI extends javax.swing.JFrame {
     public double getStart_y(){
     return Start_y =Double.parseDouble(jTextStartY.getText());
     }
+    public String getStartLocation(){
+     return   StartLocation = StartComboBox.getSelectedItem().toString();
+    }
+     public String getEndLocation(){
+     return   EndLocation = EndComboBox.getSelectedItem().toString();
+    }
+    public String getMethod(){
+    return method = MethodComboBox.getSelectedItem().toString();
+    }
+    public void setPath(String path){
+     PathTextArea.setText(path);
+    }
     /**
      * @param args the command line arguments
      */
