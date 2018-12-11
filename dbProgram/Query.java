@@ -354,7 +354,12 @@ public class Query {
 
         _commit_transaction_statement.executeUpdate();
 
-        if(streetName==""||streetName==null)
+        if(streetName==null)
+          return null;
+        else
+          streetName = streetName.replaceAll("\\s+","");
+
+        if(streetName=="")
           return null;
 
         return streetName;
@@ -375,7 +380,12 @@ public class Query {
 
         _commit_transaction_statement.executeUpdate();
 
-        if(buildingName==""||buildingName==null)
+        if(buildingName==null)
+          return null;
+        else
+          buildingName = buildingName.replaceAll("\\s+","");
+
+        if(buildingName=="")
           return null;
 
         return buildingName;
