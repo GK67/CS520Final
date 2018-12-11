@@ -5,6 +5,9 @@
  */
 package finalproject;
 
+import com.sun.xml.internal.fastinfoset.util.StringArray;
+import java.util.ArrayList;
+
 
 
 /**
@@ -382,6 +385,14 @@ public class UI extends javax.swing.JFrame {
     public void setPath(String path){
      PathTextArea.setText(path);
     }
+    public void setStartDorpDown(String[] i){
+        StartComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(i));
+    
+}
+    public void setEndDorpDown(String[] i){
+        EndComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(i));
+    
+}
     /**
      * @param args the command line arguments
      */
