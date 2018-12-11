@@ -347,7 +347,7 @@ public class Path{
 	    }
 	    output+=line;
 	}
-	building = q.transaction_search_building_by_way(way);
+	building =q.transaction_search_buildingName_by_way(way);
 	if (building != null){
 	    building = building.trim();
 	    output+="You have arrived at " + building+"\n";
