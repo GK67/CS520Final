@@ -12,7 +12,7 @@ public class MockProgram {
         }
 
         //create mock data
-        /*ArrayList output=ConvertData.nodesToArray("./testdata");/*
+        ArrayList output=ConvertData.nodesToArray("./northeast");/*
         int i=10;
         String id="42949710";
         Double la=42.3787077;
@@ -31,7 +31,7 @@ public class MockProgram {
             output.add(node);
 	    }*/
         
-        //ArrayList outputWayList= ConvertData.waysToArray("./testdata");
+        ArrayList outputWayList= ConvertData.waysToArray("./northeast");
         /*
         int j=0;
         String idW="429497109";
@@ -69,7 +69,7 @@ public class MockProgram {
 
         //only insert the data in the begining, each time running, it will delete the original tables
         //and create new one
-       // q.transaction_insert_data(output, outputWayList);  
+        q.transaction_insert_data(output, outputWayList);  
         System.out.println("Finish insert data");
 
         //search a node, before get value need do this search first
@@ -125,9 +125,21 @@ public class MockProgram {
         }*/
         //String closestNode = p.getClosestPathNode();
         System.out.println("finish creating a path Object......................");
-        ArrayList path = p.getPath(42.3903424,-72.5300928,  42.3903730, -72.5302840);
+
+        // ArrayList path = p.getPath(42.3902621,-72.5302069,  42.3908489, -72.5287564);
+        // ArrayList path = p.getPath(42.3904369,-72.5285867,  42.3897598, -72.5308958);
         //ArrayList path = p.getPath(42.3905743,-72.5303372);
-        System.out.println(path);
+        // System.out.println(path);
+
+        System.out.println("streetName"+q.transaction_search_streetName("9058447"));
+
+        System.out.println("stname"+q.transaction_search_streetName("9058384"));
+ 
+        System.out.println("buildName"+q.transaction_search_buildingName_by_way("9058447"));
+
+        System.out.println("buildName"+q.transaction_search_buildingName_by_way("9058384"));
+   
+        System.out.println("streeId"+q.transaction_search_way_by_buildingName("Governors Drive"));
         /*for (int i = 0; i < path.size(); i ++){
             System.out.println(path.get(i));
         }*/

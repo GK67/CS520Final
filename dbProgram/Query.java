@@ -72,6 +72,15 @@ public class Query {
     private String _search_building_sql = "SELECT distinct buildingName FROM way WHERE buildingName <>''";
     private PreparedStatement _search_building_statement;
 
+    private String _search_streetName_sql = "SELECT distinct streetName FROM way WHERE id = ?";
+    private PreparedStatement _search_streetName_statement;
+
+    private String _search_buildingName_of_way_sql = "SELECT distinct buildingName FROM way WHERE id = ?";
+    private PreparedStatement _search_buildingName_of_way_statement;
+
+    private String _search_way_by_buildingName_sql = "SELECT distinct id FROM way WHERE buildingName = ?";
+    private PreparedStatement _search_way_by_buildingName_statement;
+
 
 
 
@@ -118,7 +127,7 @@ public class Query {
     public void prepareStatements() throws Exception {
 
 
-    	_create_node_table_statement= _osmdb.prepareStatement(_create_node_table_sql);
+    	  _create_node_table_statement= _osmdb.prepareStatement(_create_node_table_sql);
         _create_way_table_statement = _osmdb.prepareStatement(_create_way_table_sql);
         _insert_node_statement = _osmdb.prepareStatement(_insert_node_sql);
         _insert_way_statement = _osmdb.prepareStatement(_insert_way_sql);
@@ -138,13 +147,19 @@ public class Query {
    
         _search_node_by_nid_statement = _osmdb.prepareStatement(_search_node_by_nid_sql);
 
-		_search_way_by_nid_statement = _osmdb.prepareStatement(_search_way_by_nid_sql);
+		    _search_way_by_nid_statement = _osmdb.prepareStatement(_search_way_by_nid_sql);
 
-		_search_all_nodeId_statement = _osmdb.prepareStatement(_search_all_nodeId_sql);
+		    _search_all_nodeId_statement = _osmdb.prepareStatement(_search_all_nodeId_sql);
 
-		_search_node_by_wid_statement= _osmdb.prepareStatement(_search_node_by_wid_sql);
+		    _search_node_by_wid_statement= _osmdb.prepareStatement(_search_node_by_wid_sql);
 
-		_search_building_statement= _osmdb.prepareStatement(_search_building_sql);
+		    _search_building_statement= _osmdb.prepareStatement(_search_building_sql);
+
+        _search_streetName_statement= _osmdb.prepareStatement(_search_streetName_sql);
+
+        _search_buildingName_of_way_statement= _osmdb.prepareStatement(_search_buildingName_of_way_sql);
+
+        _search_way_by_buildingName_statement= _osmdb.prepareStatement(_search_way_by_buildingName_sql);
     }
 
 
@@ -322,6 +337,66 @@ public class Query {
         _commit_transaction_statement.executeUpdate();
 
         return buildingList;
+    }
+
+    public String transaction_search_streetName(String wayId) throws Exception {
+        
+        _begin_transaction_read_only_statement.executeUpdate();
+        
+        _search_streetName_statement.clearParameters();
+        _search_streetName_statement.setString(1,wayId);
+
+        ResultSet streetSet = _search_streetName_statement.executeQuery();
+        String streetName=null;
+        if(streetSet.next()){
+          streetName =streetSet.getString("streetName");
+        }
+
+        _commit_transaction_statement.executeUpdate();
+
+        if(streetName==""||streetName==null)
+          return null;
+
+        return streetName;
+    }
+
+    public String transaction_search_buildingName_by_way(String wayId) throws Exception {
+        
+        _begin_transaction_read_only_statement.executeUpdate();
+        
+        _search_buildingName_of_way_statement.clearParameters();
+        _search_buildingName_of_way_statement.setString(1,wayId);
+
+        ResultSet buildingSet = _search_buildingName_of_way_statement.executeQuery();
+        String buildingName=null;
+        if(buildingSet.next()){
+          buildingName =buildingSet.getString("buildingName");
+        }
+
+        _commit_transaction_statement.executeUpdate();
+
+        if(buildingName==""||buildingName==null)
+          return null;
+
+        return buildingName;
+    }
+
+    public String transaction_search_way_by_buildingName(String buildingName) throws Exception {
+        
+        _begin_transaction_read_only_statement.executeUpdate();
+        
+        _search_way_by_buildingName_statement.clearParameters();
+        _search_way_by_buildingName_statement.setString(1,buildingName);
+
+        ResultSet waySet = _search_way_by_buildingName_statement.executeQuery();
+        String wayId=null;
+        if(waySet.next()){
+          wayId =waySet.getString("id");
+        }
+        
+        _commit_transaction_statement.executeUpdate();
+
+        return wayId;
     }
   
 }
