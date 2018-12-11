@@ -6,10 +6,10 @@ import java.util.*;
 public class MockProgram extends UI{
 
     public static void main(String[] args) throws Exception {
-        if (args.length < 2) {
-            System.out.println("Usage: java VideoStore CUSTOMER_ID CUSTOMER_PASSWORD");
-            System.exit(1);
-        }
+        // if (args.length < 2) {
+        //     System.out.println("Usage: java VideoStore CUSTOMER_ID CUSTOMER_PASSWORD");
+        //     System.exit(1);
+        // }
         UI ui = new UI();
         ui.setVisible(true);
         Path path = new Path();
@@ -128,7 +128,7 @@ public class MockProgram extends UI{
 
         System.out.println("Start here......................................................");
         Path p = new Path();
-        System.out.println(p.giveDirections("Knowlton Hall", "Johnson Hall", 2));
+        //System.out.println(p.giveDirections("Knowlton Hall", "Johnson Hall", 2));
         /*
         ArrayList neighbors = p.nearestNeighbors("66591571");
         for (int i = 0; i < neighbors.size(); i++){
