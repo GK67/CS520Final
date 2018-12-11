@@ -312,8 +312,8 @@ public class Path{
 	    Double cLat = q.getLatitude();
 	    Double cLon = q.getLongitude();
 	    q.transaction_search_node(pNode);
-	    Double pLat = pNode.getLatitude();
-	    Double pLon = pNode.getLongitude();
+	    Double pLat = q.getLatitude();
+	    Double pLon = q.getLongitude();
 	    Double cRad = Math.toRadians(q.getLatitude());
 	    Double pRad = Math.toRadians(pLat);
 	    Double differenceLat = Math.toRadians(pLat - cLat);
@@ -347,7 +347,7 @@ public class Path{
 	    }
 	    output+=line;
 	}
-	building = q.transaction_search_buildingName(way);
+	building = q.transaction_search_building(way);
 	if (building != null){
 	    building = building.trim();
 	    output+="You have arrived at " + building+"\n";
