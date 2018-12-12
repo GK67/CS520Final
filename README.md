@@ -43,4 +43,7 @@ Last textarea will show path of the algorithm , total distance and total elevati
 Algorithm: 
 
 Algorithm is based on A* search, it searches over all the nodes in the “ways”. Start from the start location node , and every time add two the closest node of origin node in the way and put them into the priority queue. Once all the closest nodes add in to priority queue, take out the origin node, put them in a “trash node” list, so you will not repeat adding same node. 
+For elevation part: we give path’s different  point base on the change of elevation. Like go higher place get more points, and go down place will get less points, and get points if there are no change in elevation. And return the least point path. Which means the least elevation algorithm.
+The most efficient path combines the distance and elevation, and get the best path that is not elevation changed too much or distance is too far. 
+For distance part: calculating the distance between the nodes in the way from start location to target location. Then, adding those values to each street.  After that, adding those values to the total distance. 
 
