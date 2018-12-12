@@ -14,8 +14,8 @@ Set up environment(PostgreSQL):
 
 Settings before Running the program:
  1. Open the Command Prompt, change directory to where the PostgreSQL installed, similar link, "..\PostgreSQL\10\bin"
- 2. After change to the bin folder, enter the command (since you has created a superuser during installation): psql -U postgres
- 3. Then, enter command for password (since you has created the password during installation).
+ 2. After change to the bin folder, enter the command (since you have created a superuser during installation): psql -U postgres
+ 3. Then, enter the password (you created the password during installation).
  4. After that, you are in the postgreSQL prompt, like "postgres=#".
  5. Then type, "CREATE DATABASE osmdb;", to create a database, which is called osmdb.
  6. Then close the Command Prompt.
@@ -31,19 +31,32 @@ Running the program:
  5. Type (run the program): java MockProgram
  6. It will show a graphic interface of our program.
 
-Run User Interface:
+The product:
+Our project is an Elevation-based Navigation system. We acquire geodata from OpenStreetMaps and elevation data from an OpenStreetMaps API, Open-Elevation.
+
+Project features:
 2 radio buttons: Let you choose which way you want to input your location. 
 
 Input method: The first way is choose enter the longitude and  latitude, if it is out of range, we will choose the closest node for your location. The second way is select a building name which is close to you.
 
 Path algorithm has 3 methods,which is dropdown of 3 choices.
+Most Efficient: The most efficient path by putting reasonable weights onto change in elevation. This algorithm will consider whether or not it is more efficient to have elevation change or avoid elevation change by taking a detour.
 
-Last textarea will show path of the algorithm , total distance and total elevation changes.
+Least Elevation: Putting heavy weights onto change in elevation, the path will try to avoid elevation change as much as possible unless it is extremely unreasonable.
+
+Shortest Distance: Elevation change is not factored into the path search algorithm. The algorithm will output a path that requires the least distance without taking into account elevation.
+
+
+Last textarea will show path of the algorithm , total distance and total elevation change.
 
 Algorithm: 
+Our pathing algorithm is an A* search. It begins by locating the closest node to the start location that is on a walkway/path. The algorithm uses a priority queue to queue through nodes. The priority queue gives highest priority to nodes that have the lowest distance to the destination as well as the total distance it took to get to that node. The priority queue holds ArrayLists that contain the total distance traveled as well as nodes that were previous in the path. After dequeuing from the priority queue, the algorithm adds on all neighboring nodes that appear in the path/walkway that the current node is on. The algorithm gives the according weight to changes in elevation based off the choice the user made. The algorithm repeats until a path to the end node is found or until all possible combinations are searched through and no path is found.
 
-Algorithm is based on A* search, it searches over all the nodes in the “ways”. Start from the start location node , and every time add two the closest node of origin node in the way and put them into the priority queue. Once all the closest nodes add in to priority queue, take out the origin node, put them in a “trash node” list, so you will not repeat adding same node. 
-For elevation part: we give path’s different  point base on the change of elevation. Like go higher place get more points, and go down place will get less points, and get points if there are no change in elevation. And return the least point path. Which means the least elevation algorithm.
-The most efficient path combines the distance and elevation, and get the best path that is not elevation changed too much or distance is too far. 
-For distance part: calculating the distance between the nodes in the way from start location to target location. Then, adding those values to each street.  After that, adding those values to the total distance. 
+Modules:
+ConvertData.java: contains all functions to retrieve information from the open source APIs
+MockProgram.java: The main driver of the project
+Query.java: contains all queries to retreive information from the database
+Path.java: contains all functions for the path-searching algorithm
+NodeComparable.java: contains the comparable class for the priority queue to use during the path algorithm
+Ui.java: contains all methods from the UI/view
 
